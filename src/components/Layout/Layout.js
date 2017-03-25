@@ -22,7 +22,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="site">
         <Header />
         <div className="content">
           {this.props.children}

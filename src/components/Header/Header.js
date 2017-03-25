@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container } from 'reactstrap';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './Header.css';
 
 class Header extends React.Component {
   constructor(props) {
@@ -20,27 +21,11 @@ class Header extends React.Component {
 
   render() {
     return (
-//      <div className="header">
-  //      <h1 className="title">Crowd DJ</h1>
-    //  </div>
-      <Navbar color="faded" light toggleable>
-        <Container>
-          <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">CrowdJ</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/my-account">My Account</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/faq">FAQ</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Container>
-      </Navbar>
+      <div className="header">
+        <h1 className="title">Crowd DJ</h1>
+      </div>
     );
   }
 }
 
-export default Header;
+export default withStyles(s)(Header);
