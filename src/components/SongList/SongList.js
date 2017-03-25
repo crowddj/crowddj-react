@@ -31,13 +31,13 @@ class SongList extends React.Component {
     return (
       <div className="list-container">
         <h3>Next up:</h3>
-        <table>
+        <tbody>
           { this.state.queue.map( song =>
             <Song
               key={ song.key }
               song={ song }/> )
           }
-        </table>
+        </tbody>
       </div>
     );
   }
