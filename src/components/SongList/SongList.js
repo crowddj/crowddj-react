@@ -9,12 +9,14 @@ class SongList extends React.Component {
       <div className="list-container">
         <h3>Next up:</h3>
         <table>
-          <tr>
-            <td className="ranking">1</td>
-            <td className="name">Song Name</td>
-            <td className="artist">Artist</td>
-            <td className="vote"><i className="material-icons">thumb_up</i></td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="ranking">1</td>
+              <td className="name">Song Name</td>
+              <td className="artist">Artist</td>
+              <td className="vote"><i className="material-icons">thumb_up</i></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
