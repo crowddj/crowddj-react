@@ -1,0 +1,17 @@
+
+@import '../variables.css';
+
+.search-box {
+  width: 90%;
+  margin: 10px auto 30px;
+  input {
+    border: none;
+    margin: 0px auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    padding: 10px;
+  }
+}

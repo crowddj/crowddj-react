@@ -20,6 +20,9 @@ class Header extends React.Component {
 
   render() {
     return (
+//      <div className="header">
+  //      <h1 className="title">Crowd DJ</h1>
+    //  </div>
       <Navbar color="faded" light toggleable>
         <Container>
           <NavbarToggler right onClick={this.toggle} />
