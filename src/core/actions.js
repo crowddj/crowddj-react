@@ -4,6 +4,6 @@ import { getAddedSongs } from './utils';
 
 export function addSongToQueue(song) {
   return {
-    type: ActionTypes.AddSong
+    type: ActionTypes.AddSong,
   };
 }

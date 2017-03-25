@@ -14,12 +14,12 @@ import s from './Home.css';
 class Home extends React.Component {
 
   render() {
-    console.log("Current songs: " + getAddedSongs())
-    console.log("Adding song")
-    addSong({name: "test"})
-    console.log("Current songs: " + getAddedSongs())
-    console.log("Has song named test: " + hasAddedSong({name: "test"}))
-    console.log("Has song named nottest: " + hasAddedSong({name: "nottest"}))
+    console.log(`Current songs: ${getAddedSongs()}`);
+    console.log('Adding song');
+    addSong({ name: 'test' });
+    console.log(`Current songs: ${getAddedSongs()}`);
+    console.log(`Has song named test: ${hasAddedSong({ name: 'test' })}`);
+    console.log(`Has song named nottest: ${hasAddedSong({ name: 'nottest' })}`);
 
     return (
       <div className="container">

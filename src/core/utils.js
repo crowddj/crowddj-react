@@ -11,9 +11,7 @@ export function getAddedSongs() {
 }
 
 export function hasAddedSong(song) {
-  return getAddedSongs().filter((item) => {
-    return item == song.name
-  }).length > 0
+  return getAddedSongs().filter((item) => item == song.name).length > 0;
 }
 
 export function addSong(song) {

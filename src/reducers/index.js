@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
 export default function rootReducer(state = {}, action) {
-  switch(action.type) {
+  switch (action.type) {
     default:
       return state;
   }
