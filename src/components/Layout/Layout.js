@@ -11,9 +11,6 @@ import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Layout.css';
 import Header from '../Header';
-import NowPlaying from '../NowPlaying';
-import SearchBox from '../SearchBox';
-import SongList from '../SongList';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -27,9 +24,6 @@ class Layout extends React.Component {
         <div className="content">
           {this.props.children}
         </div>
-        <NowPlaying />
-        <SearchBox />
-        <SongList />
       </div>
     );
   }
