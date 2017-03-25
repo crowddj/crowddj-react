@@ -5,7 +5,7 @@ import s from './SearchBox.css';
 import SearchResults from '../SearchResults';
 
 const baseSearchURL = 'https://api.spotify.com/v1/search';
-const searchTypes = 'track';
+const searchTypes = 'artist,track';
 
 class SearchBox extends React.Component {
   constructor(props) {
