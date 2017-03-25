@@ -1,2 +1,48 @@
 
 @import '../variables.css';
+
+tr {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #dfe2e5;
+  height: 55px;
+
+  &:first-of-type {
+    td:first-of-type {
+      border-top-left-radius: 3px;
+    }
+    td:last-of-type {
+      border-top-right-radius: 3px;
+    }
+  }
+
+  &:last-of-type {
+    border: none;
+    td:first-of-type {
+      border-bottom-left-radius: 3px;
+    }
+    td:last-of-type {
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  td {
+    padding: 0px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &.ranking {
+      padding-left: 10px;
+      width: 20px;
+    }
+    &.name {
+      font-weight: 700;
+      width: 100px;
+    }
+    &.artist {
+      width: 90px;
+    }
+    &.vote {
+      width: 30px;
+    }
+  }
+}
