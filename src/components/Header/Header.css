@@ -1,1 +1,22 @@
-@import '~bootstrap/scss/bootstrap.scss';
+/* @import '~bootstrap/scss/bootstrap.scss'; */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.header {
+  margin-bottom: 20px;
+
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+  }
+}

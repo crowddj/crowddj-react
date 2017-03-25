@@ -1,0 +1,29 @@
+.search-results {
+  width: 90%;
+  margin: 10px auto 30px;
+  background: rgba(255, 255, 255, 0.2);
+
+  .search-results-tracks,
+  .search-results-artists {
+    padding: 20px;
+
+    li {
+      cursor: pointer;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3 ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &:last-of-type {
+        border: none;
+      }
+    }
+  }
+}
+
+.track-name {
+  font-weight: 700;
+}

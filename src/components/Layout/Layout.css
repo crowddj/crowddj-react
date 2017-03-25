@@ -15,11 +15,20 @@ body {
   height: 100%;
   font-family: 'Proxima Nova';
   font-weight: 400;
-  background-color: #1e1e2f;
+  background: #1e1e2f;
   color: #fff;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.site {
+  margin: 30px 0 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }
