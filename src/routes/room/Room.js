@@ -1,6 +1,4 @@
-
 import React from 'react';
-import database from '../../database';
 
 class Room extends React.Component {
   static propTypes = {
