@@ -26,4 +26,9 @@ a {
 
 .site {
   margin: 30px 0 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }
