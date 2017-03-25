@@ -5,15 +5,14 @@ import s from './SearchBox.css';
 import SearchResults from '../SearchResults';
 
 const baseSearchURL = 'https://api.spotify.com/v1/search';
-const searchTypes = 'artist,track';
+const searchTypes = 'track';
 
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       query: '',
-      tracks: [],
-      artists: [],
+      tracks: []
     };
 
     this.onChangeSearch = this.onChangeSearch.bind(this);
@@ -29,13 +28,32 @@ class SearchBox extends React.Component {
       try {
         const response = await fetch(`${baseSearchURL}?q=${this.state.query}&type=${searchTypes}`);
         const responseJson = await response.json();
-        this.setState({ tracks: responseJson.tracks.items, artists: responseJson.artists.items });
+        const tracks = this.filterTrackDuplicates(responseJson.tracks.items.sort(this.popularitySort));
+        const artists = responseJson.artists.items.sort(this.popularitySort);
+        this.setState({ tracks: tracks.slice(0, 10) });
       } catch (error) {
         console.log(error);
       }
     } else {
-      this.setState({ tracks: [], albums: [] });
+      this.setState({ tracks: [] });
     }
+  }
+
+  popularitySort(a, b) {
+    return b.popularity - a.popularity;
+  }
+
+  filterTrackDuplicates(tracks) {
+    let filtered = [];
+    let seen = {};
+    for (let track of tracks) {
+      let trackArtist = track.artists[0].name;
+      if (!seen[`${track.name}-${trackArtist}`]) {
+        filtered.push(track);
+        seen[`${track.name}-${trackArtist}`] = true;
+      }
+    }
+    return filtered;
   }
 
   render() {
@@ -49,7 +67,7 @@ class SearchBox extends React.Component {
             onChange={this.onChangeSearch}
           />
         </div>
-        <SearchResults tracks={this.state.tracks} artists={this.state.artists} />
+        <SearchResults tracks={this.state.tracks} />
       </div>
     );
   }
