@@ -1,0 +1,6 @@
+{
+  "name": "NowPlaying",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NowPlaying.js"
+}

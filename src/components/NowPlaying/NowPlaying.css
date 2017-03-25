@@ -1,0 +1,30 @@
+
+@import '../variables.css';
+
+.now-playing {
+  border-radius: 3px;
+  padding: 10px 15px;
+  width: 90%;
+  margin: 30px auto;
+  background: rgba(255,255,255,0.1);
+  h3 {
+    margin: 5px 0 20px;
+  }
+  .artwork {
+    width: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .info {
+    display: inline-block;
+    vertical-align: top;
+    .name {
+      font-weight: 700;
+    }
+    .rating {
+      margin-top: 10px;
+    }
+  }
+}
