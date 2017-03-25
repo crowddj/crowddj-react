@@ -79,4 +79,5 @@ class SearchResults extends React.Component {
     );
   }
 }
+
 export default withStyles(s)(SearchResults);
