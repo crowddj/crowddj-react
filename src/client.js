@@ -13,10 +13,12 @@ import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
 import UniversalRouter from 'universal-router';
 import queryString from 'query-string';
+import { Provider } from 'react-redux';
 import { createPath } from 'history/PathUtils';
 import history from './core/history';
 import App from './components/App';
 import { ErrorReporter, deepForceUpdate } from './core/devUtils';
+import store from './store';
 
 // Global (context) variables that can be easily accessed from any React component
 // https://facebook.github.io/react/docs/context.html
@@ -146,7 +148,9 @@ async function onLocationChange(location) {
     }
 
     appInstance = ReactDOM.render(
-      <App context={context}>{route.component}</App>,
+      (<Provider store={store({})}>
+        <App context={context}>{route.component}</App>
+      </Provider>),
       container,
       () => onRenderComplete(route, location),
     );
