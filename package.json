@@ -40,6 +40,7 @@
     "react-widgets": "^3.4.6",
     "reactfire": "^1.0.0",
     "reactstrap": "^4.2.0",
+    "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.2",
     "sequelize": "^3.28.0",
     "source-map-support": "^0.4.6",

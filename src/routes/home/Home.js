@@ -2,8 +2,8 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { Button } from 'reactstrap';
-import s from './Home.css';
 import Link from '../../components/Link';
+import s from './Home.css';
 
 class Home extends React.Component {
 
