@@ -1,0 +1,226 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "babel-runtime": "^6.20.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "classnames": "^2.2.5",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "express-jwt": "^5.1.0",
+    "fastclick": "^1.0.6",
+    "fbjs": "^0.8.6",
+    "graphql": "^0.8.2",
+    "history": "^4.5.0",
+    "isomorphic-style-loader": "^1.1.0",
+    "jsonwebtoken": "^7.2.1",
+    "moment": "^2.18.1",
+    "node-fetch": "^1.6.3",
+    "node-sass": "^4.5.0",
+    "normalize.css": "^5.0.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "pretty-error": "^2.0.2",
+    "query-string": "^4.2.3",
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-widgets": "^3.4.6",
+    "reactstrap": "^4.2.0",
+    "sass-loader": "^6.0.2",
+    "sequelize": "^3.28.0",
+    "source-map-support": "^0.4.6",
+    "sqlite3": "^3.1.8",
+    "universal-router": "^2.0.0",
+    "whatwg-fetch": "^2.0.1",
+    "zip-dir": "^1.0.2"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.0",
+    "autoprefixer": "^6.5.3",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babel-template": "^6.16.0",
+    "babel-types": "^6.19.0",
+    "browser-sync": "^2.18.2",
+    "chai": "^3.5.0",
+    "chokidar": "^1.6.1",
+    "css-loader": "^0.26.0",
+    "editorconfig-tools": "^0.1.1",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-css-modules": "^1.0.9",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "extend": "^3.0.0",
+    "file-loader": "^0.9.0",
+    "front-matter": "^2.1.1",
+    "git-repository": "^0.1.4",
+    "glob": "^7.1.1",
+    "json-loader": "^0.5.4",
+    "lint-staged": "^3.2.2",
+    "markdown-it": "^8.2.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.1.2",
+    "pixrem": "^3.0.2",
+    "pleeease-filters": "^3.0.0",
+    "postcss": "^5.2.5",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "postcss-loader": "^1.1.1",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.3.1",
+    "postcss-partial-import": "^2.1.0",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-selector-matches": "^2.0.5",
+    "postcss-selector-not": "^2.0.0",
+    "postcss-url": "^5.1.2",
+    "pre-commit": "^1.2.2",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "15.4.1",
+    "react-deep-force-update": "^2.0.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "redbox-react": "^1.3.3",
+    "rimraf": "^2.5.4",
+    "sinon": "^2.0.0-pre.3",
+    "stylefmt": "^5.0.2",
+    "stylelint": "^7.6.0",
+    "stylelint-config-standard": "^15.0.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-middleware": "^1.5.1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "syntax-trailing-function-commas",
+      "transform-async-to-generator",
+      "transform-es2015-destructuring",
+      "transform-es2015-parameters",
+      "transform-es2015-duplicate-keys",
+      "transform-es2015-modules-commonjs",
+      "transform-exponentiation-operator",
+      "transform-runtime"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "plugin:css-modules/recommended"
+    ],
+    "plugins": [
+      "css-modules"
+    ],
+    "globals": {
+      "__DEV__": true
+    },
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "arrow-parens": "off",
+      "generator-star-spacing": "off",
+      "import/extensions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-filename-extension": "off",
+      "react/no-danger": "off",
+      "react/no-unused-prop-types": "off",
+      "react/prefer-stateless-function": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "string-quotes": "single",
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.{md,sh,txt,xml,html,json}": [
+      "editorconfig-tools fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,less,scss,sss}": [
+      "stylefmt",
+      "stylelint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint:js": "eslint src tools",
+    "lint:css": "stylelint \"src/**/*.{css,less,scss,sss}\"",
+    "lint:staged": "lint-staged",
+    "lint": "npm run lint:js && npm run lint:css",
+    "test": "mocha \"src/**/*.test.js\" --require babel-register --require test/setup.js",
+    "test:watch": "npm run test -- --reporter min --watch",
+    "clean": "babel-node tools/run clean",
+    "copy": "babel-node tools/run copy",
+    "bundle": "babel-node tools/run bundle",
+    "build": "babel-node tools/run build",
+    "deploy": "./tools/deploy",
+    "render": "babel-node tools/run render",
+    "serve": "babel-node tools/run runServer",
+    "start": "babel-node tools/run start"
+  }
+}

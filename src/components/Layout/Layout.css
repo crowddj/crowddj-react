@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+  background: white;
+}
+
+.border {
+  height: 250px;
+  border-style: dashed;
+  position: relative;
+  border-color: #979797;
+  border-width: 2px;
+  margin-top: 50px;
+  padding: 80px;
+}
+
+.center-title {
+  margin-top: 100px;
+}
+
+.title-description {
+  width: 707px;
+  align-content: center;
+  margin-left: 200px;
+}
+
+.horizontal-center {
+  margin: 0 auto;
+}
+
+.btn-secondary {
+  background-color: #c0c0c0;
+}
+
+/* temp style to make everything not look like shit */
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 15px;
+}

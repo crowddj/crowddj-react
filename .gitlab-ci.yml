@@ -1,0 +1,20 @@
+image: node:latest
+
+cache:
+  paths:
+  - node_modules/
+
+build:
+  script:
+   - yarn install
+   - yarn run build
+
+deploy_developement:
+  stage: deploy
+  script:
+    - yarn run deploy
+  environment:
+    name: development
+    url: https://dev.agentless.co
+  only:
+  - master
