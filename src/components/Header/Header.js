@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container } from 'reactstrap';
-import logoUrl from './Agentless.png';
 
 class Header extends React.Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class Header extends React.Component {
       <Navbar color="faded" light toggleable>
         <Container>
           <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/"><img alt="Agentless" height="30px" src={logoUrl} /></NavbarBrand>
+          <NavbarBrand href="/">CrowdJ</NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

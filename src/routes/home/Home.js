@@ -12,8 +12,7 @@ class Home extends React.Component {
       <div className="container">
         <br />
         <p className="text-center">
-          <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create an offer</Button>
-          <Button color="info" outline size="lg" tag={Link} to="/offer/revise">Revise an offer</Button>
+          <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create a room</Button>
         </p>
       </div>
     );
