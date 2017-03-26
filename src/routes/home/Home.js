@@ -88,7 +88,7 @@ class Home extends React.Component {
             <input id="create-room-name" type="text" />
           </div>
           <div className="overlay-create" onClick={this.create.bind(this)}></div>
-          <a className="create" href="#" onClick={this.parseCreateInput.bind(this)}>Create <span class="extra">A Party</span></a>
+          <a className="create" href="#" onClick={this.parseCreateInput.bind(this)}>Create <span className="extra">A Party</span></a>
         </div>
       </div>
     );

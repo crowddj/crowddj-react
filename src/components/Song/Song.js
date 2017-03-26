@@ -37,7 +37,7 @@ class Song extends React.Component {
         </td>
         { isDj &&
           <td className="vote" onClick={ this.remove }>
-            <span className="upvotes">{ this.state.voteCount }</span>
+            <span className="upvotes">{ this.state.song.voteCount }</span>
             <i className="material-icons">cancel</i>
           </td>
         }

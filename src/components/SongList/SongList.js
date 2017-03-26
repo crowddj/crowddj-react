@@ -41,7 +41,7 @@ class SongList extends React.Component {
                 <Song
                   key={song.key}
                   song={song}
-		              roomId={this.props.roomId}
+		  roomId={this.props.roomId}
                   isDj={this.props.isDj}
                 />)
               }
