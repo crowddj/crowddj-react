@@ -30,9 +30,6 @@ class Room extends React.Component {
       <div className="container">
         <Layout />
         <br />
-        <p className="text-center">
-          <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create a room</Button>
-        </p>
         <NowPlaying roomId={this.props.name} />
         <SearchBox roomId={this.props.name} />
         <SongList roomId={this.props.name} />
