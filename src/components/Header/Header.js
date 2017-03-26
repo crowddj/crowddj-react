@@ -22,7 +22,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h1 className="title">Crowd DJ</h1>
+        <h1 className="title">CrowdDJ</h1>
       </div>
     );
   }
