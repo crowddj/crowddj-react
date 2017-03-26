@@ -29,10 +29,9 @@ class Room extends React.Component {
     return (
       <div className="container">
         <Layout />
-        <br />
-        <NowPlaying roomId={this.props.name} />
         <SearchBox roomId={this.props.name} />
         <SongList roomId={this.props.name} />
+        <NowPlaying roomId={this.props.name} />
       </div>
     );
   }

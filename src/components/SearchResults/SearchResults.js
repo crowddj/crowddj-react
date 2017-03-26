@@ -64,12 +64,14 @@ class SearchResults extends React.Component {
     }
 
     if (newTrack) {
-      queue.push({
+      const trackObj = {
         name: track.name,
         artist: track.artists[0].name,
         voteCount: 1,
         trackId: track.id,
-      });
+      };
+      queue.push(trackObj);
+      voteSong(trackObj);
     }
     this.setState({ queue });
   }
