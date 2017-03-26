@@ -7,7 +7,7 @@ import NowPlaying from '../../components/NowPlaying';
 import SearchBox from '../../components/SearchBox';
 import SongList from '../../components/SongList';
 import { getAddedSongs, hasAddedSong, addSong } from '../../core/utils';
-
+import Layout from '../../components/Layout';
 
 import s from './Home.css';
 
@@ -23,6 +23,7 @@ class Home extends React.Component {
 
     return (
       <div className="container">
+      <Layout />
         <br />
         <p className="text-center">
           <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create a room</Button>

@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Home from './Home';
-import Layout from '../../components/Layout';
 
 export default {
 
@@ -13,7 +12,7 @@ export default {
     };
     return {
       title: 'React Starter Kit',
-      component: <Layout><Home news={data.news} /></Layout>,
+      component: <Home news={data.news} />,
     };
   },
 
