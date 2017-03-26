@@ -41,20 +41,8 @@
 
     }
 
-    .vote {
-      width: 60px;
-      padding-left: 10px;
-      cursor: pointer;
 
-      .upvotes {
-        vertical-align: top;
-        margin-top: 3px;
-        margin-left: 5px;
-        position: absolute;
-        left: 45px;
-        bottom: 24px;
-      }
-    }
+
   }
   .info {
     display: inline-block;
@@ -114,6 +102,25 @@
     .material-icons {
       font-size: 18px;
       margin: 0 1px;
+    }
+  }
+  .vote {
+    width: 60px;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-left: 180px;
+
+    i {
+      width: 30px;
+    }
+
+    .upvotes {
+      vertical-align: top;
+      margin-top: 3px;
+      margin-left: 5px;
+      position: relative;
+      top: 3px;
+      bottom: 24px;
     }
   }
 }
