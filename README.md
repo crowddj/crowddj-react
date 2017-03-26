@@ -1,6 +1,6 @@
 # Crowd DJ
 
-Crowd DJ is a web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue.
+Crowd DJ is a web app that allows people who are at a party or social gathering with a DJ (who uses Spotify) to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue.
 
 **Contributors:** [@john4](https://github.com/john4) [@BenC14](https://github.com/BenC14) [@bchiang7](https://github.com/bchiang7) [@camden11](https://github.com/camden11) [@Drewpom](https://github.com/Drewpom)
 
@@ -24,6 +24,7 @@ Designs by Julie Tennett
 - ReactJS
 - Sass
 - Firebase
+- Spotify API
 
 ### Screenshots
 ![](./public/screenshots/1.png)
