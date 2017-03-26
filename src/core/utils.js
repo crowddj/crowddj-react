@@ -41,3 +41,25 @@ export function voteSong(song) {
     return true;
   }
 }
+
+export function getRatedSongs() {
+  let currentRatedSongs = cookie.load(Cookies.RatedSongs);
+  if (currentRatedSongs == null || currentRatedSongs == undefined || currentRatedSongs.constructor !== Array) {
+    currentRatedSongs = [];
+  }
+  return currentRatedSongs;
+}
+
+// returns true if not yet voted, false if already voted for
+export function rateSong(trackId) {
+  let current = getRatedSongs();
+
+  if (current.includes(trackId)) {
+    return false;
+  }
+  else {
+    current.push(trackId);
+    cookie.save(Cookies.RatedSongs, current);
+    return true;
+  }
+}

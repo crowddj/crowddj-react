@@ -3,6 +3,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NowPlaying.css';
 import base from '../../base';
+import { rateSong } from '../../core/utils';
 
 const baseURL = 'https://api.spotify.com/v1/tracks/'
 
@@ -12,8 +13,10 @@ class NowPlaying extends React.Component {
     super(props);
 
     this.state = {
-      current: {},
-    };
+      current: {}
+    }
+
+    this.vote = this.vote.bind(this);
   }
 
   componentWillMount() {
@@ -59,6 +62,26 @@ class NowPlaying extends React.Component {
         </div>
       </div>
     );
+  }
+
+  vote(rating) {
+    let state = { ...this.state };
+    if (rateSong(this.state.current.trackId)) {
+      let current = { ...this.state.current };
+      if (current.rating) {
+        console.log(current.rating);
+        let weightedRating = current.rating * current.ratingCount;
+        weightedRating += rating;
+        current.ratingCount += 1;
+        current.rating = weightedRating / current.ratingCount;
+      }
+      else {
+        current.rating = rating;
+        current.ratingCount = 1;
+      }
+      state.current = current;
+      this.setState(state);
+    }
   }
 }
 
