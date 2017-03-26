@@ -1,0 +1,12 @@
+.rating {
+    position: absolute;
+    float: right;
+    top: 14px;
+    right: 14px;
+
+    .material-icons.heart {
+      font-size: 18px;
+      width: 18px;
+      margin: 0 1px;
+    }
+  }
