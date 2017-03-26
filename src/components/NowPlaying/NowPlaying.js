@@ -32,7 +32,7 @@ class NowPlaying extends React.Component {
   }
 
   async getAlbumArtwork() {
-    const response = await fetch(`${baseURL}${this.state.current['track-id']}`);
+    const response = await fetch(`${baseURL}${this.state.current['trackId']}`);
     const responseJson = await response.json();
     const artwork = responseJson.album.images[0].url;
     this.setState({ imageURL: artwork})
