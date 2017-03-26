@@ -8,9 +8,6 @@ tr {
     position: relative;
     top: -12px;
     color: #A8A2B2;
-    &:before {
-      content: counter(my_counter);
-    }
   }
   .name-artist {
     span {
