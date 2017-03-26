@@ -31,12 +31,11 @@ export function getVotedSongs() {
 
 // returns true if not yet voted, false if already voted for
 export function voteSong(song) {
-  let current = getVotedSongs();
+  const current = getVotedSongs();
 
   if (current.includes(song.trackId)) {
     return false;
-  }
-  else {
+  } else {
     current.push(song.trackId);
     cookie.save(Cookies.VotedSongs, current);
     return true;

@@ -11,15 +11,15 @@ class Song extends React.Component {
     this.upvote = this.upvote.bind(this);
 
     this.state = {
-      voteCount: props.song.voteCount
+      voteCount: props.song.voteCount,
     };
   }
 
   componentWillMount() {
-    console.log('in song: '+ this.props.roomId);
+    console.log(`in song: ${this.props.roomId}`);
     this.ref = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}/voteCount`, {
       context: this,
-      state: 'voteCount'
+      state: 'voteCount',
     });
   }
 
@@ -35,14 +35,14 @@ class Song extends React.Component {
         <td className="ranking">{ song.voteCount }</td>
         <td className="name">{ song.name }</td>
         <td className="artist">{ song.artist }</td>
-        <td className="vote"><i className="material-icons" onClick={ this.upvote }>thumb_up</i></td>
+        <td className="vote"><i className="material-icons" onClick={this.upvote}>thumb_up</i></td>
       </tr>
     );
   }
 
   upvote() {
     if (voteSong(this.props.song)) {
-      let state = { ...this.state };
+      const state = { ...this.state };
       state.voteCount += 1;
       this.setState(state);
     }

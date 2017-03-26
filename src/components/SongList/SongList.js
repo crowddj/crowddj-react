@@ -10,16 +10,16 @@ class SongList extends React.Component {
     super(props);
 
     this.state = {
-      queue: []
-    }
+      queue: [],
+    };
   }
 
   componentWillMount() {
-    console.log('roomid' + this.props.roomId)
+    console.log(`roomid${this.props.roomId}`);
     this.ref = base.syncState(`rooms/${this.props.roomId}/queue`, {
       context: this,
       state: 'queue',
-      asArray: true
+      asArray: true,
     });
   }
 
@@ -33,11 +33,12 @@ class SongList extends React.Component {
       <div className="list-container">
         <h3>Next up:</h3>
         <table>
-          { this.state.queue.map( song =>
+          { this.state.queue.map(song =>
             <Song
-              key={ song.key }
-              song={ song }
-	      roomId={this.props.roomId}/> )
+              key={song.key}
+              song={song}
+              roomId={this.props.roomId}
+            />)
           }
         </table>
       </div>

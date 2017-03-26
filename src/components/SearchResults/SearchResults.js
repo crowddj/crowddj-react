@@ -13,7 +13,7 @@ class SearchResults extends React.Component {
   }
 
   componentWillMount() {
-    console.log('in search results: ' + this.props.roomId);
+    console.log(`in search results: ${this.props.roomId}`);
     this.ref = base.syncState(`rooms/${this.props.roomId}/queue`, {
       context: this,
       state: 'queue',
@@ -48,7 +48,7 @@ class SearchResults extends React.Component {
     } else {
       return null;
     }
-  };
+  }
 
   addTrackToQueue(track) {
     const queue = this.state.queue;
