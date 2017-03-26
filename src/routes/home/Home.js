@@ -12,6 +12,18 @@ import Layout from '../../components/Layout';
 import s from './Home.css';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    // this.checkEnter = this.checkEnter.bind(this);
+  }
+
+  checkEnter(e) {
+    console.log(e);
+    if (e.keyCode === 13) {
+      console.log('enter');
+      parseJoinInput(e);
+    }
+  }
 
   join() {
     $('.copy .desc, .caption .cap1, .create-button, .overlay-join').fadeOut();
@@ -45,6 +57,7 @@ class Home extends React.Component {
     console.log(`Has song named test: ${hasAddedSong({ name: 'test' })}`);
     console.log(`Has song named nottest: ${hasAddedSong({ name: 'nottest' })}`);
 
+
     return (
       <div className="container">
         <Layout />
@@ -60,7 +73,7 @@ class Home extends React.Component {
             <span className="cap2">Enter your party's key!</span>
           </span>
           <div className="input-container">
-            <input id="join-room-name" type="text" />
+            <input id="join-room-name" type="text" onkeydown={this.checkEnter.bind(this)} />
           </div>
           <div className="overlay-join" onClick={this.join.bind(this)}></div>
           <a className="join" href="#" onClick={this.parseJoinInput.bind(this)}>Join <span className="extra">A Party</span></a>
@@ -75,7 +88,7 @@ class Home extends React.Component {
             <input id="create-room-name" type="text" />
           </div>
           <div className="overlay-create" onClick={this.create.bind(this)}></div>
-          <a className="create" href="#" onClick={this.parseCreateInput.bind(this)}>Create <span class="extra">A Party</span></a>
+          <a className="create" href="#" onClick={this.parseCreateInput.bind(this)}>Create <span className="extra">A Party</span></a>
         </div>
       </div>
     );
