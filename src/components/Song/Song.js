@@ -30,10 +30,15 @@ class Song extends React.Component {
     const { song } = this.props;
     return (
       <tr>
-        <td className="ranking">{ song.voteCount }</td>
-        <td className="name">{ song.name }</td>
-        <td className="artist">{ song.artist }</td>
-        <td className="vote"><i className="material-icons" onClick={ this.upvote }>thumb_up</i></td>
+        <td className="ranking">1</td>
+        <td className="name-artist">
+          <span className="name">{ song.name }</span>
+          <span className="artist">{ song.artist }</span>
+        </td>
+        <td className="vote" onClick={ this.upvote }>
+          <i className="material-icons">thumb_up</i>
+          <span className="upvotes">{ song.upvoteCount }10</span>
+        </td>
       </tr>
     );
   }

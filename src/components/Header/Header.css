@@ -4,19 +4,23 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Proxima Nova';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
-  background: #1e1e2f;
+  background: #27232F;
   color: #fff;
 }
 
 .header {
-  margin-bottom: 20px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  background: #15131A;
+  padding: 20px 0 40px;
 
   .title {
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 20px;
     margin: 0;
+    text-transform: uppercase;
   }
 }

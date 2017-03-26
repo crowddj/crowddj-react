@@ -64,12 +64,15 @@ class SearchBox extends React.Component {
     return (
       <div className="search-box">
         <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search for a song"
-            value={this.state.query}
-            onChange={this.onChangeSearch}
-          />
+          <div className="placeholder">
+            <i className="material-icons">search</i>
+            <input
+              type="text"
+              placeholder="Search for a song to request"
+              value={this.state.query}
+              onChange={this.onChangeSearch}
+            />
+          </div>
         </div>
         <SearchResults tracks={this.state.tracks} onSelectSong={this.clearSearch.bind(this)} />
       </div>
