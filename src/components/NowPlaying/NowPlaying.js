@@ -41,7 +41,6 @@ class NowPlaying extends React.Component {
   render() {
     return (
       <div className="now-playing">
-        <h3>Now Playing:</h3>
         <img className="artwork" src={ this.state.imageURL } />
         <span className="rating">
           <i className="material-icons">favorite_border</i>

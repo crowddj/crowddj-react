@@ -7,12 +7,11 @@ import { voteSong } from '../../core/utils';
 class Song extends React.Component {
   constructor(props) {
     super(props);
-
-    this.upvote = this.upvote.bind(this);
-
     this.state = {
       voteCount: props.song.voteCount
     };
+
+    this.upvote = this.upvote.bind(this);
   }
 
   componentWillMount() {
@@ -30,14 +29,14 @@ class Song extends React.Component {
     const { song } = this.props;
     return (
       <tr>
-        <td className="ranking">1</td>
+        <td className="ranking"></td>
         <td className="name-artist">
           <span className="name">{ song.name }</span>
           <span className="artist">{ song.artist }</span>
         </td>
         <td className="vote" onClick={ this.upvote }>
           <i className="material-icons">thumb_up</i>
-          <span className="upvotes">{ song.upvoteCount }10</span>
+          <span className="upvotes">{ this.state.voteCount }</span>
         </td>
       </tr>
     );
