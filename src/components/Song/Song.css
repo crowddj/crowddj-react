@@ -1,23 +1,31 @@
 @import '../variables.css';
 
-td {
-  padding: 0px 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  &.ranking {
-    padding-left: 10px;
-    width: 20px;
-  }
-  &.name {
-    font-weight: 700;
-    width: 100px;
-  }
-  &.artist {
-    width: 90px;
-  }
-  &.vote {
+tr {
+  height: 70px;
+  .ranking {
     width: 30px;
-    cursor: pointer;
+    position: relative;
+    top: -12px;
+    color: #A8A2B2;
+  }
+  .name-artist {
+    span {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .name {
+      font-weight: 700;
+    }
+  }
+  .vote {
+    width: 60px;
+    padding-left: 10px;
+    .upvotes {
+      vertical-align: top;
+      margin-top: 3px;
+      margin-left: 5px;
+    }
   }
 }

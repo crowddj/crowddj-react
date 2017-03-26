@@ -6,7 +6,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: -20px;
+  top: 0;
 
   h3 {
     text-transform: uppercase;
@@ -14,7 +14,7 @@
   }
 
   hr {
-    border-color: #A8A2B2;
+    border-color: #3B3546;
   }
 
   .container {

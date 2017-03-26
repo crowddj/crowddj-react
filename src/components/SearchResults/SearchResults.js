@@ -28,7 +28,6 @@ class SearchResults extends React.Component {
     if (this.props.tracks.length > 0) {
       return (
         <div className="search-results-tracks">
-        <h4>Tracks</h4>
         <ul>
         { this.props.tracks.map((track) => (
           <li
@@ -37,7 +36,7 @@ class SearchResults extends React.Component {
             this.props.onSelectSong();
           }}
           >
-          <span className="track-name">{ track.name }</span><br />
+          <span className="track-name">{ track.name }</span>
           <span className="track-artist-name">{ track.artists[0].name }</span>
           </li>
           ))}
