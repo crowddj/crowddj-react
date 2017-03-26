@@ -1,0 +1,6 @@
+{
+  "name": "PlayedSong",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PlayedSong.js"
+}

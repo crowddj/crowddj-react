@@ -8,7 +8,6 @@ class Song extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      voteCount: props.song.voteCount,
       song: {}
     };
 
@@ -17,11 +16,7 @@ class Song extends React.Component {
   }
 
   componentWillMount() {
-    this.ref = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}/voteCount`, {
-      context: this,
-      state: 'voteCount',
-    });
-    this.fullRef = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}`, {
+    this.ref = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}`, {
       context: this,
       state: 'song'
     });
@@ -29,7 +24,6 @@ class Song extends React.Component {
 
   componentWillUnmount() {
     base.removeBinding(this.ref);
-    base.removeBinding(this.fullRef);
   }
 
   render() {
@@ -44,13 +38,13 @@ class Song extends React.Component {
         { isDj &&
           <td className="vote" onClick={ this.remove }>
             <i className="material-icons">close</i>
-            <span className="upvotes">{ this.state.voteCount }</span>
+            <span className="upvotes">{ this.state.song.voteCount }</span>
           </td>
         }
         { !isDj &&
           <td className="vote" onClick={ this.upvote }>
             <i className="material-icons">thumb_up</i>
-            <span className="upvotes">{ this.state.voteCount }</span>
+            <span className="upvotes">{ this.state.song.voteCount }</span>
           </td>
         }
       </tr>
@@ -60,7 +54,7 @@ class Song extends React.Component {
   upvote() {
     if (voteSong(this.props.song)) {
       const state = { ...this.state };
-      state.voteCount += 1;
+      state.song.voteCount += 1;
       this.setState(state);
     }
   }
