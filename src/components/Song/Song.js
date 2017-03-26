@@ -37,8 +37,8 @@ class Song extends React.Component {
         </td>
         { isDj &&
           <td className="vote" onClick={ this.remove }>
-            <i className="material-icons">close</i>
-            <span className="upvotes">{ this.state.song.voteCount }</span>
+            <span className="upvotes">{ this.state.voteCount }</span>
+            <i className="material-icons">cancel</i>
           </td>
         }
         { !isDj &&

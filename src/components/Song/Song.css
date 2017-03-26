@@ -28,11 +28,18 @@ tr {
     width: 60px;
     padding-left: 10px;
     cursor: pointer;
-
+    @media screen and (min-width: 768px) {
+      width: 100px;
+    }
     .upvotes {
       vertical-align: top;
       margin-top: 3px;
       margin-left: 5px;
+      display: inline-block;
+      width: 20px;
+      @media screen and (min-width: 768px) {
+        margin-right: 20px;
+      }
     }
   }
 }
