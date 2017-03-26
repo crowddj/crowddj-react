@@ -4,7 +4,7 @@ import SongList from '../../components/SongList';
 import NowPlaying from '../../components/NowPlaying';
 import Layout from '../../components/Layout';
 
-class Room extends React.Component {
+class Dj extends React.Component {
   static propTypes = {
     name: React.PropTypes.string.isRequired,
   };
@@ -26,4 +26,4 @@ class Room extends React.Component {
   }
 }
 
-export default Room;
+export default Dj;
