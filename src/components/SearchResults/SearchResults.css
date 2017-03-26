@@ -12,6 +12,11 @@
   .search-results-tracks {
     padding: 0;
 
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
     li {
       cursor: pointer;
       padding: 10px 40px;
