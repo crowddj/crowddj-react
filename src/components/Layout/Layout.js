@@ -24,9 +24,6 @@ class Layout extends React.Component {
     return (
       <div className="site">
         <Header />
-        <SearchBox />
-        <SongList />
-        <NowPlaying />
       </div>
     );
   }

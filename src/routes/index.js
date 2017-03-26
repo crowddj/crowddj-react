@@ -10,6 +10,7 @@ export default {
   children: [
     require('./home').default,
     require('./room').default,
+    require('./dj').default,
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
     require('./notFound').default,

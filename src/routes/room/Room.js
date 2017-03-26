@@ -6,7 +6,7 @@ import NowPlaying from '../../components/NowPlaying';
 import SearchBox from '../../components/SearchBox';
 import SongList from '../../components/SongList';
 import { getAddedSongs, hasAddedSong, addSong } from '../../core/utils';
-
+import Layout from '../../components/Layout';
 
 class Room extends React.Component {
   static propTypes = {
@@ -28,6 +28,7 @@ class Room extends React.Component {
 
     return (
       <div className="container">
+        <Layout />
         <br />
         <p className="text-center">
           <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create a room</Button>
@@ -36,7 +37,7 @@ class Room extends React.Component {
         <SearchBox roomId={this.props.name} />
         <SongList roomId={this.props.name} />
       </div>
-	  );
+    );
   }
 }
 

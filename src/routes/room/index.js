@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Room from './Room';
-import Layout from '../../components/Layout';
+
 
 export default {
 
@@ -10,7 +10,7 @@ export default {
   async action(context) {
     return {
       title: 'Music Room',
-      component: <Layout><Room name={context.params.room} /></Layout>,
+      component: <Room name={context.params.room} />,
     };
   },
 
