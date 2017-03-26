@@ -10,15 +10,15 @@ class SongList extends React.Component {
     super(props);
 
     this.state = {
-      queue: []
-    }
+      queue: [],
+    };
   }
 
   componentWillMount() {
-    this.ref = base.syncState(`rooms/johns-room/queue`, {
+    this.ref = base.syncState('rooms/johns-room/queue', {
       context: this,
       state: 'queue',
-      asArray: true
+      asArray: true,
     });
   }
 
@@ -30,14 +30,20 @@ class SongList extends React.Component {
     console.log(this.state.queue);
     return (
       <div className="list-container">
-        <h3>Next up:</h3>
-        <table>
-          { this.state.queue.map( song =>
-            <Song
-              key={ song.key }
-              song={ song }/> )
-          }
-        </table>
+        <h3>Requested Songs</h3>
+        <hr />
+        <div className="container">
+          <table>
+            <tbody>
+              { this.state.queue.map(song =>
+                <Song
+                  key={song.key}
+                  song={song}
+                />)
+              }
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

@@ -3,28 +3,56 @@
 
 .now-playing {
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 15px 15px;
   width: 90%;
-  margin: 30px auto;
-  background: rgba(255,255,255,0.1);
+  margin: 20px auto;
+  background: #3B3546;
+  white-space: nowrap;
+  position: fixed;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 70px;
   h3 {
     margin: 5px 0 20px;
   }
   .artwork {
-    width: 100px;
-    margin-bottom: 10px;
+    width: 44px;
+    margin: 0px 10px 10px 0;
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
   }
   .info {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
+    position: relative;
+
+    .currently {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
     .name {
       font-weight: 700;
+      margin-right: 7px;
     }
-    .rating {
-      margin-top: 10px;
+
+  }
+  .song {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .rating {
+    position: absolute;
+    float: right;
+    top: 14px;
+    right: 14px;
+
+    .material-icons {
+      font-size: 18px;
+      margin: 0 1px;
     }
   }
 }

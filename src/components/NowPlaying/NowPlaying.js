@@ -5,6 +5,8 @@ import s from './NowPlaying.css';
 import base from '../../base';
 import { rateSong } from '../../core/utils';
 
+const baseURL = 'https://api.spotify.com/v1/tracks/'
+
 class NowPlaying extends React.Component {
 
   constructor(props) {
@@ -18,14 +20,25 @@ class NowPlaying extends React.Component {
   }
 
   componentWillMount() {
-    this.ref = base.syncState(`rooms/johns-room/current`, {
+    this.ref = base.syncState('rooms/johns-room/current', {
       context: this,
-      state: 'current'
+      state: 'current',
     });
   }
 
   componentWillUnmount() {
     base.removeBinding(this.ref);
+  }
+
+  componentDidUpdate() {
+    this.getAlbumArtwork();
+  }
+
+  async getAlbumArtwork() {
+    const response = await fetch(`${baseURL}${this.state.current['trackId']}`);
+    const responseJson = await response.json();
+    const artwork = responseJson.album.images[0].url;
+    this.setState({ imageURL: artwork})
   }
 
   render() {
