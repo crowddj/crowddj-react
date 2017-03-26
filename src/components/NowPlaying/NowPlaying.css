@@ -50,6 +50,9 @@
         vertical-align: top;
         margin-top: 3px;
         margin-left: 5px;
+        position: absolute;
+        left: 45px;
+        bottom: 24px;
       }
     }
   }

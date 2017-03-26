@@ -68,14 +68,6 @@ class NowPlaying extends React.Component {
     return (
       <div className="now-playing">
         <img className="artwork" src={this.state.imageURL} />
-        { this.props.isDj &&
-          <div className="vote">
-            <i className="material-icons">favorite_solid</i>
-            { Object.keys(this.state.current).length > 0  &&
-              <span className="upvotes">{ this.state.current.rating.toString().substring(0, 3) }</span>
-            }
-          </div>
-        }
         { !this.props.isDj &&
           <NowPlayingRating
             track={ this.state.current.name }
@@ -88,6 +80,14 @@ class NowPlaying extends React.Component {
             <span className="artist">{ this.state.current.artist }</span>
           </div>
         </div>
+        { this.props.isDj &&
+          <div className="vote">
+            <i className="material-icons">favorite_solid</i>
+            { Object.keys(this.state.current).length > 0  &&
+              <span className="upvotes">{ this.state.current.rating.toString().substring(0, 3) }</span>
+            }
+          </div>
+        }
       </div>
     );
   }
