@@ -13,6 +13,18 @@
   left: 0;
   right: 0;
   height: 70px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    margin: 20px 50px;
+    width: 22%;
+    height: 350px;
+  }
+
   h3 {
     margin: 5px 0 20px;
   }
@@ -21,23 +33,48 @@
     margin: 0px 10px 10px 0;
     display: inline-block;
     vertical-align: top;
+
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      display: block;
+      margin: 35px auto 0;
+
+    }
   }
   .info {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
     position: relative;
+    width: 90%;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin: 10px 25px;
+      position: static;
+    }
 
     .currently {
       text-transform: uppercase;
       font-size: 12px;
       margin-bottom: 2px;
+
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 14px;
+      }
     }
     .name {
       font-weight: 700;
       margin-right: 7px;
     }
-
+    .artist {
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
   }
   .song {
     width: 80%;
@@ -49,6 +86,14 @@
     float: right;
     top: 14px;
     right: 14px;
+
+    @media screen and (min-width: 768px) {
+      float: left;
+      top: auto;
+      right: auto;
+      bottom: 12px;
+      left: 40px;
+    }
 
     .material-icons {
       font-size: 18px;
