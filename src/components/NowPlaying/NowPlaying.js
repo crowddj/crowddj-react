@@ -31,17 +31,19 @@ class NowPlaying extends React.Component {
   render() {
     return (
       <div className="now-playing">
-        <h3>Now Playing:</h3>
-        <img className="artwork" src="https://s-media-cache-ak0.pinimg.com/originals/4d/9a/cc/4d9accabd07ebff45cd1ea4128e34236.jpg" alt="" />
+        <img className="artwork" src={ this.state.imageURL } />
+        <span className="rating">
+          <i className="material-icons">favorite_border</i>
+          <i className="material-icons">favorite_border</i>
+          <i className="material-icons">favorite_border</i>
+          <i className="material-icons">favorite_border</i>
+          <i className="material-icons">favorite_border</i>
+        </span>
         <div className="info">
-          <div className="name">{ this.state.current.name }</div>
-          <div className="artist">{ this.state.current.artist }</div>
-          <div className="rating">
-            <i className="material-icons" onClick={ () => {this.vote(1);} }>favorite_border</i>
-            <i className="material-icons" onClick={ () => {this.vote(2);} }>favorite_border</i>
-            <i className="material-icons" onClick={ () => {this.vote(3);} }>favorite_border</i>
-            <i className="material-icons" onClick={ () => {this.vote(4);} }>favorite_border</i>
-            <i className="material-icons" onClick={ () => {this.vote(5);} }>favorite_border</i>
+          <div className="currently">Currently Playing</div>
+          <div className="song">
+            <span className="name">{ this.state.current.name },</span>
+            <span className="artist">{ this.state.current.artist }</span>
           </div>
         </div>
       </div>
