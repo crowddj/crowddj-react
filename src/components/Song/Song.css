@@ -43,6 +43,7 @@ tr {
     }
     &.vote {
       width: 30px;
+      cursor: pointer;
     }
   }
 }
