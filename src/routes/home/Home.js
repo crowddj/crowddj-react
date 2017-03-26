@@ -63,7 +63,7 @@ class Home extends React.Component {
             <input id="join-room-name" type="text" />
           </div>
           <div className="overlay-join" onClick={this.join.bind(this)}></div>
-          <a className="join" href="#" onClick={this.parseJoinInput.bind(this)}>Join <span class="extra">A Party</span></a>
+          <a className="join" href="#" onClick={this.parseJoinInput.bind(this)}>Join <span className="extra">A Party</span></a>
         </div>
 
         <div className="button-container create-button">
