@@ -4,6 +4,10 @@
   position: relative;
   top: -30px;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   .search-bar {
     width: 90%;
     margin: 10px auto 0;
@@ -12,11 +16,23 @@
       position: relative;
     }
 
-    i {
+    .search, .cancel {
       position: absolute;
       top: 7px;
       left: 7px;
       color: #bbb;
+    }
+
+    .cancel {
+      left:  auto;
+      right: 7px;
+      display: none;
+    }
+
+    input:focus {
+      & + .cancel {
+        display: block;
+      }
     }
 
     input {

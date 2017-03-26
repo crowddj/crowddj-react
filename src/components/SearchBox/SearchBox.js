@@ -1,7 +1,6 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './SearchBox.css';
-
 import SearchResults from '../SearchResults';
 
 const baseSearchURL = 'https://api.spotify.com/v1/search';
@@ -65,13 +64,14 @@ class SearchBox extends React.Component {
       <div className="search-box">
         <div className="search-bar">
           <div className="placeholder">
-            <i className="material-icons">search</i>
+            <i className="material-icons search">search</i>
             <input
               type="text"
               placeholder="Search for a song to request"
               value={this.state.query}
               onChange={this.onChangeSearch}
             />
+            <i className="material-icons cancel" onClick={this.clearSearch.bind(this)}>cancel</i>
           </div>
         </div>
         <SearchResults tracks={this.state.tracks} roomId={this.props.roomId} onSelectSong={this.clearSearch.bind(this)} />

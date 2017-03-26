@@ -12,7 +12,6 @@ body {
 
 .header {
   font-family: 'Asap', sans-serif;
-  font-weight: 700;
   background: #15131A;
   padding: 20px 0 40px;
 
@@ -20,7 +19,17 @@ body {
     text-align: center;
     color: #fff;
     font-size: 20px;
+    font-weight: 700;
     margin: 0;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      font-size: 36px;
+      font-weight: 400;
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+
   }
 }
