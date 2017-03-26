@@ -6,7 +6,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 0;
+  top: -15px;
 
   @media screen and (min-width: 768px) {
     width: 60%;
@@ -19,7 +19,7 @@
   }
 
   hr {
-    border-color: #3B3546;
+    border: 1px solid #3B3546;
   }
 
   .container {
