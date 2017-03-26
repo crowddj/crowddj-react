@@ -1,29 +1,40 @@
 .search-results {
   width: 90%;
-  margin: 10px auto 30px;
-  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  background: #E8E4EF;
+  color: #A8A2B2;
+  z-index: 5;
+  // height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-  .search-results-tracks,
-  .search-results-artists {
-    padding: 20px;
+  .search-results-tracks {
+    padding: 0;
 
     li {
       cursor: pointer;
-      padding: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.3 ease;
-
-      &:hover {
-        background: rgba(255, 255, 255, 0.3);
-      }
+      padding: 10px 40px;
+      border-bottom: 1px solid #B8ACCB;
 
       &:last-of-type {
         border: none;
+      }
+
+      .track-name {
+        display: block;
+        font-weight: 500;
+        color: #3B3546;
+      }
+
+      .track-artist-name {
+        display: block;
+        font-size: 14px;
       }
     }
   }
 }
 
-.track-name {
-  font-weight: 700;
-}
+
