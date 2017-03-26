@@ -7,8 +7,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 
   .search-results-tracks {
     padding: 0;
@@ -26,6 +25,7 @@
         display: block;
         font-weight: 500;
         color: #3B3546;
+        line-height: 18px;
       }
 
       .track-artist-name {
