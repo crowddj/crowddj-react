@@ -1,4 +1,13 @@
 import React from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Button } from 'reactstrap';
+import Link from '../../components/Link';
+import NowPlaying from '../../components/NowPlaying';
+import SearchBox from '../../components/SearchBox';
+import SongList from '../../components/SongList';
+import { getAddedSongs, hasAddedSong, addSong } from '../../core/utils';
+
+
 
 class Room extends React.Component {
   static propTypes = {
@@ -7,37 +16,31 @@ class Room extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { songs: [] };
-    this.firebaseRef = database.ref(`queues/${props.name}`);
+    console.log(props.name);
   }
 
-  componentWillMount() {
-    this.firebaseRef.once('value', (dataSnapshot) => {
-      const songs = [];
-      dataSnapshot.forEach((childSnapshot) => {
-        const song = childSnapshot.val();
-        song['.key'] = childSnapshot.key;
-        songs.push(song);
-      });
+    render() {
+          console.log(`Current songs: ${getAddedSongs()}`);
+          console.log('Adding song');
+          addSong({ name: 'test' });
+          console.log(`Current songs: ${getAddedSongs()}`);
+          console.log(`Has song named test: ${hasAddedSong({ name: 'test' })}`);
+          console.log(`Has song named nottest: ${hasAddedSong({ name: 'nottest' })}`);
 
-      this.setState({
-        songs,
-      });
-    });
-  }
-
-  render() {
-    // console.log(this.state.songs);
-    const { name } = this.props;
-    return (
-      <div className="container">
-        <h1>{name}</h1>
-        <p className="text-center">
-          {JSON.stringify(this.state.songs)}
-        </p>
-      </div>
-    );
-  }
+          return (
+	    <div className="container">
+	    <br />
+	    <p className="text-center">
+	    <Button color="info" outline size="lg" tag={Link} to="/offer/create">Create a room</Button>
+	    </p>
+	    <NowPlaying roomId={this.props.name}/>
+	    <SearchBox roomId={this.props.name}/>
+	    <SongList roomId={this.props.name}/>
+	    </div>
+	  );
+        }
 }
 
+
 export default Room;
+

@@ -15,7 +15,7 @@ class NowPlaying extends React.Component {
   }
 
   componentWillMount() {
-    this.ref = base.syncState(`rooms/johns-room/current`, {
+    this.ref = base.syncState(`rooms/${this.props.roomId}/current`, {
       context: this,
       state: 'current'
     });

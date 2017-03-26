@@ -13,7 +13,8 @@ class SearchResults extends React.Component {
   }
 
   componentWillMount() {
-    this.ref = base.syncState('rooms/johns-room/queue', {
+    console.log('in search results: ' + this.props.roomId);
+    this.ref = base.syncState(`rooms/${this.props.roomId}/queue`, {
       context: this,
       state: 'queue',
       asArray: true,
@@ -31,7 +32,12 @@ class SearchResults extends React.Component {
           <h4>Tracks</h4>
           <ul>
             { this.props.tracks.map((track) => (
-              <li key={track.id} onClick={() => this.addTrackToQueue(track)}>
+              <li
+                key={track.id} onClick={() => {
+                  this.addTrackToQueue(track);
+                  this.props.onSelectSong();
+                }}
+              >
                 <span className="track-name">{ track.name }</span><br />
                 <span className="track-artist-name">{ track.artists[0].name }</span>
               </li>
@@ -39,17 +45,31 @@ class SearchResults extends React.Component {
           </ul>
         </div>
       );
-  }
+    } else {
+      return null;
+    }
+  };
 
   addTrackToQueue(track) {
-    const state = { ...this.state };
-    state.queue.push({
-      name: track.name,
-      artist: track.artists[0].name,
-      voteCount: 0,
-      trackId: track.id,
-    });
-    this.setState(state);
+    const queue = this.state.queue;
+    let newTrack = true;
+    for (const queuedTrack of queue) {
+      if (track.name == queuedTrack.name && track.artists[0].name == queuedTrack.artist) {
+        queuedTrack.voteCount++;
+        newTrack = false;
+        break;
+      }
+    }
+
+    if (newTrack) {
+      queue.push({
+        name: track.name,
+        artist: track.artists[0].name,
+        voteCount: 1,
+        trackId: track.id,
+      });
+    }
+    this.setState({ queue });
   }
 
   render() {

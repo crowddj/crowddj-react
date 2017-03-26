@@ -12,7 +12,7 @@ class SearchBox extends React.Component {
     super(props);
     this.state = {
       query: '',
-      tracks: []
+      tracks: [],
     };
 
     this.onChangeSearch = this.onChangeSearch.bind(this);
@@ -44,16 +44,20 @@ class SearchBox extends React.Component {
   }
 
   filterTrackDuplicates(tracks) {
-    let filtered = [];
-    let seen = {};
-    for (let track of tracks) {
-      let trackArtist = track.artists[0].name;
+    const filtered = [];
+    const seen = {};
+    for (const track of tracks) {
+      const trackArtist = track.artists[0].name;
       if (!seen[`${track.name}-${trackArtist}`]) {
         filtered.push(track);
         seen[`${track.name}-${trackArtist}`] = true;
       }
     }
     return filtered;
+  }
+
+  clearSearch() {
+    this.setState({ query: '', tracks: [] });
   }
 
   render() {
@@ -67,7 +71,7 @@ class SearchBox extends React.Component {
             onChange={this.onChangeSearch}
           />
         </div>
-        <SearchResults tracks={this.state.tracks} />
+        <SearchResults tracks={this.state.tracks} roomId={this.props.roomId} onSelectSong={this.clearSearch.bind(this)} />
       </div>
     );
   }
