@@ -9,26 +9,31 @@ class Song extends React.Component {
     super(props);
     this.state = {
       voteCount: props.song.voteCount,
+      song: {}
     };
 
     this.upvote = this.upvote.bind(this);
+    this.remove = this.remove.bind(this);
   }
 
   componentWillMount() {
-    console.log("in song: " + this.props.roomId);
     this.ref = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}/voteCount`, {
       context: this,
       state: 'voteCount',
+    });
+    this.fullRef = base.syncState(`rooms/${this.props.roomId}/queue/${this.props.song.key}`, {
+      context: this,
+      state: 'song'
     });
   }
 
   componentWillUnmount() {
     base.removeBinding(this.ref);
+    base.removeBinding(this.fullRef);
   }
 
   render() {
-    const { song } = this.props;
-    const { roomId } = this.props;
+    const { song, roomId, isDj } = this.props;
     return (
       <tr>
         <td className="ranking"></td>
@@ -36,10 +41,18 @@ class Song extends React.Component {
           <span className="name">{ song.name }</span>
           <span className="artist">{ song.artist }</span>
         </td>
-        <td className="vote" onClick={ this.upvote }>
-          <i className="material-icons">thumb_up</i>
-          <span className="upvotes">{ this.state.voteCount }</span>
-        </td>
+        { isDj &&
+          <td className="vote" onClick={ this.remove }>
+            <i className="material-icons">close</i>
+            <span className="upvotes">{ this.state.voteCount }</span>
+          </td>
+        }
+        { !isDj &&
+          <td className="vote" onClick={ this.upvote }>
+            <i className="material-icons">thumb_up</i>
+            <span className="upvotes">{ this.state.voteCount }</span>
+          </td>
+        }
       </tr>
     );
   }
@@ -50,6 +63,12 @@ class Song extends React.Component {
       state.voteCount += 1;
       this.setState(state);
     }
+  }
+
+  remove() {
+    const state = { ...this.state };
+    state.song = null;
+    this.setState(state);
   }
 }
 

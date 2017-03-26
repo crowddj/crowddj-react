@@ -16,11 +16,13 @@ class Dj extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Layout />
-        <SearchBox />
-        <SongList />
-        <NowPlaying />
+        <br />
+        <SongList
+          isDj={ true }
+          roomId={this.props.name}/>
+        <NowPlaying roomId={this.props.name}/>
       </div>
       )
   }
