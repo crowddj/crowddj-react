@@ -20,3 +20,25 @@ export function addSong(song) {
   cookie.save(Cookies.AddedSongs, current);
   return current;
 }
+
+export function getVotedSongs() {
+  let currentVotedSongs = cookie.load(Cookies.VotedSongs);
+  if (currentVotedSongs == null || currentVotedSongs == undefined || currentVotedSongs.constructor !== Array) {
+    currentVotedSongs = [];
+  }
+  return currentVotedSongs;
+}
+
+// returns true if not yet voted, false if already voted for
+export function voteSong(song) {
+  let current = getVotedSongs();
+
+  if (current.includes(song.trackId)) {
+    return false;
+  }
+  else {
+    current.push(song.trackId);
+    cookie.save(Cookies.VotedSongs, current);
+    return true;
+  }
+}

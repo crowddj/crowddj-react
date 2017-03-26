@@ -39,6 +39,9 @@ class SearchResults extends React.Component {
           </ul>
         </div>
       );
+    } else {
+      return null;
+    }
   }
 
   addTrackToQueue(track) {
