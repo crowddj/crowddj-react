@@ -28,7 +28,6 @@ class SongList extends React.Component {
   }
 
   render() {
-    console.log(this.state.queue);
     return (
       <div className="list-container">
         <h3>Requested Songs</h3>
@@ -36,11 +35,13 @@ class SongList extends React.Component {
         <div className="container">
           <table>
             <tbody>
-              { this.state.queue.map(song =>
+              { this.state.queue.sort((a, b) => {
+                return b.voteCount - a.voteCount;
+              }).map(song =>
                 <Song
                   key={song.key}
                   song={song}
-		  roomId={this.props.roomId}
+		              roomId={this.props.roomId}
                 />)
               }
             </tbody>
