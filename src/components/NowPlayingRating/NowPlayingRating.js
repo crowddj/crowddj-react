@@ -18,10 +18,6 @@ class NowPlayingRating extends React.Component {
     this.resetRating = this.resetRating.bind(this);
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   this.setState({ rating: 0 });
-  // }
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.track != this.state.currentTrack) {
       this.setState({ rating: 0, confirmed: false, confirmRating: null, currentTrack: nextProps.track });
@@ -37,8 +33,13 @@ class NowPlayingRating extends React.Component {
   }
 
   confirmRating(rating) {
-    this.setState({ confirmed: true, confirmRating: rating });
+    if (!this.state.confirmed) {
+      this.setState({ confirmed: true, confirmRating: rating }, () => {
+        this.props.sendRating(this.state.confirmRating);
+      });
+    }
   }
+
 
   renderHeart(index) {
     const rating = this.state.confirmed ? this.state.confirmRating : this.state.rating;

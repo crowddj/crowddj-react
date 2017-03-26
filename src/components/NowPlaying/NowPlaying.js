@@ -44,22 +44,6 @@ class NowPlaying extends React.Component {
     this.setState({ imageURL: artwork });
   }
 
-  render() {
-    return (
-      <div className="now-playing">
-        <img className="artwork" src={this.state.imageURL} />
-        <NowPlayingRating track={this.state.current.name} />
-        <div className="info">
-          <div className="currently">Currently Playing</div>
-          <div className="song">
-            <span className="name">{ this.state.current.name },</span>
-            <span className="artist">{ this.state.current.artist }</span>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   vote(rating) {
     let state = { ...this.state };
     if (rateSong(this.state.current.trackId)) {
@@ -78,6 +62,22 @@ class NowPlaying extends React.Component {
       state.current = current;
       this.setState(state);
     }
+  }
+
+  render() {
+    return (
+      <div className="now-playing">
+        <img className="artwork" src={this.state.imageURL} />
+        <NowPlayingRating track={this.state.current.name} sendRating={ this.vote.bind(this) }/>
+        <div className="info">
+          <div className="currently">Currently Playing</div>
+          <div className="song">
+            <span className="name">{ this.state.current.name },</span>
+            <span className="artist">{ this.state.current.artist }</span>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
