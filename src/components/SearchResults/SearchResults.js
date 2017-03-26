@@ -2,6 +2,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './SearchResults.css';
 import base from '../../base';
+import { voteSong } from '../../core/utils';
 
 class SearchResults extends React.Component {
   constructor(props) {
@@ -54,7 +55,9 @@ class SearchResults extends React.Component {
     let newTrack = true;
     for (const queuedTrack of queue) {
       if (track.name == queuedTrack.name && track.artists[0].name == queuedTrack.artist) {
-        queuedTrack.voteCount++;
+        if (voteSong(queuedTrack)) {
+          queuedTrack.voteCount++;
+        }
         newTrack = false;
         break;
       }
