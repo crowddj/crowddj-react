@@ -22,7 +22,9 @@ class Dj extends React.Component {
         <SongList
           isDj={ true }
           roomId={this.props.name}/>
-        <NowPlaying roomId={this.props.name}/>
+        <NowPlaying
+          roomId={this.props.name}
+          isDj={ true }/>
       </div>
       )
   }

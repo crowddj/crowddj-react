@@ -40,6 +40,18 @@
       margin: 35px auto 0;
 
     }
+
+    .vote {
+      width: 60px;
+      padding-left: 10px;
+      cursor: pointer;
+
+      .upvotes {
+        vertical-align: top;
+        margin-top: 3px;
+        margin-left: 5px;
+      }
+    }
   }
   .info {
     display: inline-block;
