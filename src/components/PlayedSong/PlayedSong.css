@@ -1,7 +1,11 @@
 @import '../variables.css';
 
 .list-container {
-  width: 100%;
+  /* width: 100%; */
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 tr {
@@ -32,6 +36,10 @@ tr {
     width: 60px;
     padding-left: 10px;
     cursor: pointer;
+    .material-icons {
+      display: inline-block;
+      width: 30px;
+    }
 
     .upvotes {
       vertical-align: top;
