@@ -11,6 +11,7 @@ export default {
     require('./home').default,
     require('./room').default,
     require('./dj').default,
+    require('./roomlist').default,
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
     require('./notFound').default,
