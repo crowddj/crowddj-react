@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/assets/";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 90);
+/******/ 	return __webpack_require__(__webpack_require__.s = 91);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -77,34 +77,40 @@ module.exports = require("react");
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/core-js/object/get-prototype-of");
+module.exports = require("babel-runtime/helpers/jsx");
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/helpers/classCallCheck");
+module.exports = require("babel-runtime/core-js/object/get-prototype-of");
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/helpers/createClass");
+module.exports = require("babel-runtime/helpers/classCallCheck");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/helpers/inherits");
+module.exports = require("babel-runtime/helpers/createClass");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/helpers/possibleConstructorReturn");
+module.exports = require("babel-runtime/helpers/inherits");
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("babel-runtime/helpers/possibleConstructorReturn");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports) {
 
 /*
@@ -160,27 +166,27 @@ module.exports = function() {
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("isomorphic-style-loader/lib/withStyles");
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _stringify = __webpack_require__(82);
+var _stringify = __webpack_require__(83);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
-var _slicedToArray2 = __webpack_require__(85);
+var _slicedToArray2 = __webpack_require__(86);
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-var _getIterator2 = __webpack_require__(19);
+var _getIterator2 = __webpack_require__(20);
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
@@ -321,33 +327,33 @@ function insertCss(styles) {
 module.exports = insertCss;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/asyncToGenerator");
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/regenerator");
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n  /* --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif; */\n  /*\n   * Layout\n   * ======================================================================== */\n  --max-content-width: 1000px;\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */\n  --screen-xs-min: 480px;\n  /* Extra small screen / phone */\n  --screen-sm-min: 768px;\n  /* Small screen / tablet */\n  --screen-md-min: 992px;\n  /* Medium screen / desktop */\n  --screen-lg-min: 1200px;\n  /* Large screen / wide desktop */ }\n", "", {"version":3,"sources":["/./components/variables.css"],"names":[],"mappings":"AAAA,iBAAiB;AACjB;;;;;;;GAOG;AACH;EACE;;gFAE8E;EAC9E,wEAAwE;EACxE;;gFAE8E;EAC9E,4BAA4B;EAC5B;;gFAE8E;EAC9E,uBAAuB;EACvB,gCAAgC;EAChC,uBAAuB;EACvB,2BAA2B;EAC3B,uBAAuB;EACvB,6BAA6B;EAC7B,wBAAwB;EACxB,iCAAiC,EAAE","file":"variables.css","sourcesContent":["@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n  /* --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif; */\n  /*\n   * Layout\n   * ======================================================================== */\n  --max-content-width: 1000px;\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */\n  --screen-xs-min: 480px;\n  /* Extra small screen / phone */\n  --screen-sm-min: 768px;\n  /* Small screen / tablet */\n  --screen-md-min: 992px;\n  /* Medium screen / desktop */\n  --screen-lg-min: 1200px;\n  /* Large screen / wide desktop */ }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n  /* --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif; */\n  /*\n   * Layout\n   * ======================================================================== */\n  --max-content-width: 1000px;\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */\n  --screen-xs-min: 480px;\n  /* Extra small screen / phone */\n  --screen-sm-min: 768px;\n  /* Small screen / tablet */\n  --screen-md-min: 992px;\n  /* Medium screen / desktop */\n  --screen-lg-min: 1200px;\n  /* Large screen / wide desktop */ }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -357,7 +363,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reBase = __webpack_require__(88);
+var _reBase = __webpack_require__(89);
 
 var _reBase2 = _interopRequireDefault(_reBase);
 
@@ -372,7 +378,7 @@ var base = _reBase2.default.createClass({
 exports.default = base;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -389,11 +395,11 @@ exports.voteSong = voteSong;
 exports.getRatedSongs = getRatedSongs;
 exports.rateSong = rateSong;
 
-var _Cookies = __webpack_require__(45);
+var _Cookies = __webpack_require__(46);
 
 var _Cookies2 = _interopRequireDefault(_Cookies);
 
-var _reactCookie = __webpack_require__(89);
+var _reactCookie = __webpack_require__(90);
 
 var _reactCookie2 = _interopRequireDefault(_reactCookie);
 
@@ -463,113 +469,6 @@ function rateSong(trackId) {
 }
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _getPrototypeOf = __webpack_require__(1);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Layout/Layout.js'; /**
-                                                                                                     * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                                     *
-                                                                                                     * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                                     *
-                                                                                                     * This source code is licensed under the MIT license found in the
-                                                                                                     * LICENSE.txt file in the root directory of this source tree.
-                                                                                                     */
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _withStyles = __webpack_require__(7);
-
-var _withStyles2 = _interopRequireDefault(_withStyles);
-
-var _Layout = __webpack_require__(71);
-
-var _Layout2 = _interopRequireDefault(_Layout);
-
-var _Header = __webpack_require__(39);
-
-var _Header2 = _interopRequireDefault(_Header);
-
-var _SearchBox = __webpack_require__(16);
-
-var _SearchBox2 = _interopRequireDefault(_SearchBox);
-
-var _SongList = __webpack_require__(18);
-
-var _SongList2 = _interopRequireDefault(_SongList);
-
-var _NowPlaying = __webpack_require__(15);
-
-var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Layout = function (_React$Component) {
-  (0, _inherits3.default)(Layout, _React$Component);
-
-  function Layout() {
-    (0, _classCallCheck3.default)(this, Layout);
-    return (0, _possibleConstructorReturn3.default)(this, (Layout.__proto__ || (0, _getPrototypeOf2.default)(Layout)).apply(this, arguments));
-  }
-
-  (0, _createClass3.default)(Layout, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'site', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 25
-          },
-          __self: this
-        },
-        _react2.default.createElement(_Header2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 26
-          },
-          __self: this
-        })
-      );
-    }
-  }]);
-  return Layout;
-}(_react2.default.Component);
-
-Layout.propTypes = {
-  children: _react.PropTypes.node.isRequired
-};
-exports.default = (0, _withStyles2.default)(_Layout2.default)(Layout);
-
-/***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -580,69 +479,141 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _keys = __webpack_require__(83);
+var _jsx2 = __webpack_require__(1);
 
-var _keys2 = _interopRequireDefault(_keys);
-
-var _extends2 = __webpack_require__(17);
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-var _regenerator = __webpack_require__(10);
-
-var _regenerator2 = _interopRequireDefault(_regenerator);
-
-var _asyncToGenerator2 = __webpack_require__(9);
-
-var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
-
-var _getPrototypeOf = __webpack_require__(1);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/NowPlaying/NowPlaying.js';
+var _jsx3 = _interopRequireDefault(_jsx2);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _NowPlaying = __webpack_require__(72);
+var _Layout = __webpack_require__(72);
+
+var _Layout2 = _interopRequireDefault(_Layout);
+
+var _Header = __webpack_require__(40);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _SearchBox = __webpack_require__(17);
+
+var _SearchBox2 = _interopRequireDefault(_SearchBox);
+
+var _SongList = __webpack_require__(19);
+
+var _SongList2 = _interopRequireDefault(_SongList);
+
+var _NowPlaying = __webpack_require__(16);
 
 var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
 
-var _base = __webpack_require__(12);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('div', {
+  className: 'site'
+}, void 0, (0, _jsx3.default)(_Header2.default, {})); /**
+                                                       * React Starter Kit (https://www.reactstarterkit.com/)
+                                                       *
+                                                       * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                       *
+                                                       * This source code is licensed under the MIT license found in the
+                                                       * LICENSE.txt file in the root directory of this source tree.
+                                                       */
+
+function Layout(props) {
+  return _ref;
+}
+
+exports.default = (0, _withStyles2.default)(_Layout2.default)(Layout);
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _keys = __webpack_require__(84);
+
+var _keys2 = _interopRequireDefault(_keys);
+
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _extends2 = __webpack_require__(18);
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _regenerator = __webpack_require__(11);
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = __webpack_require__(10);
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
+var _getPrototypeOf = __webpack_require__(2);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(3);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(4);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(6);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(5);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _withStyles = __webpack_require__(8);
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _NowPlaying = __webpack_require__(73);
+
+var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
+
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
-var _NowPlayingRating = __webpack_require__(40);
+var _NowPlayingRating = __webpack_require__(41);
 
 var _NowPlayingRating2 = _interopRequireDefault(_NowPlayingRating);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var baseURL = 'https://api.spotify.com/v1/albums/';
+
+var _ref2 = (0, _jsx3.default)('div', {
+  className: 'currently'
+}, void 0, 'Currently Playing');
+
+var _ref3 = (0, _jsx3.default)('i', {
+  className: 'material-icons'
+}, void 0, 'favorite_solid');
 
 var NowPlaying = function (_React$Component) {
   (0, _inherits3.default)(NowPlaying, _React$Component);
@@ -739,107 +710,27 @@ var NowPlaying = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'now-playing', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 69
-          },
-          __self: this
-        },
-        _react2.default.createElement('img', { className: 'artwork', src: this.state.imageURL, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 70
-          },
-          __self: this
-        }),
-        !this.props.isDj && _react2.default.createElement(_NowPlayingRating2.default, {
-          track: this.state.current.name,
-          sendRating: this.vote.bind(this), __source: {
-            fileName: _jsxFileName,
-            lineNumber: 72
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'div',
-          { className: 'info', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 76
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'div',
-            { className: 'currently', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 77
-              },
-              __self: this
-            },
-            'Currently Playing'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'song', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 78
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'span',
-              { className: 'name', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 79
-                },
-                __self: this
-              },
-              this.state.current.name,
-              ','
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: 'artist', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 80
-                },
-                __self: this
-              },
-              this.state.current.artist
-            )
-          )
-        ),
-        this.props.isDj && _react2.default.createElement(
-          'div',
-          { className: 'vote', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 84
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'i',
-            { className: 'material-icons', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 85
-              },
-              __self: this
-            },
-            'favorite_solid'
-          ),
-          (0, _keys2.default)(this.state.current).length > 0 && _react2.default.createElement(
-            'span',
-            { className: 'upvotes', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 87
-              },
-              __self: this
-            },
-            this.state.current.rating.toString().substring(0, 3)
-          )
-        )
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'now-playing'
+      }, void 0, (0, _jsx3.default)('img', {
+        className: 'artwork',
+        src: this.state.imageURL
+      }), !this.props.isDj && (0, _jsx3.default)(_NowPlayingRating2.default, {
+        track: this.state.current.name,
+        sendRating: this.vote.bind(this)
+      }), (0, _jsx3.default)('div', {
+        className: 'info'
+      }, void 0, _ref2, (0, _jsx3.default)('div', {
+        className: 'song'
+      }, void 0, (0, _jsx3.default)('span', {
+        className: 'name'
+      }, void 0, this.state.current.name, ','), (0, _jsx3.default)('span', {
+        className: 'artist'
+      }, void 0, this.state.current.artist))), this.props.isDj && (0, _jsx3.default)('div', {
+        className: 'vote'
+      }, void 0, _ref3, (0, _keys2.default)(this.state.current).length > 0 && (0, _jsx3.default)('span', {
+        className: 'upvotes'
+      }, void 0, this.state.current.rating.toString().substring(0, 3))));
     }
   }]);
   return NowPlaying;
@@ -848,7 +739,7 @@ var NowPlaying = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_NowPlaying2.default)(NowPlaying);
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -858,53 +749,55 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getIterator2 = __webpack_require__(19);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getIterator2 = __webpack_require__(20);
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
-var _getPrototypeOf = __webpack_require__(1);
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/SearchBox/SearchBox.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _SearchBox = __webpack_require__(76);
+var _SearchBox = __webpack_require__(77);
 
 var _SearchBox2 = _interopRequireDefault(_SearchBox);
 
-var _SearchResults = __webpack_require__(43);
+var _SearchResults = __webpack_require__(44);
 
 var _SearchResults2 = _interopRequireDefault(_SearchResults);
 
@@ -912,6 +805,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var baseSearchURL = 'https://api.spotify.com/v1/search';
 var searchTypes = 'artist,track';
+
+var _ref2 = (0, _jsx3.default)('i', {
+  className: 'material-icons search'
+}, void 0, 'search');
 
 var SearchBox = function (_React$Component) {
   (0, _inherits3.default)(SearchBox, _React$Component);
@@ -1044,70 +941,25 @@ var SearchBox = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'search-box', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 64
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'div',
-          { className: 'search-bar', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 65
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'div',
-            { className: 'placeholder', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 66
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'i',
-              { className: 'material-icons search', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 67
-                },
-                __self: this
-              },
-              'search'
-            ),
-            _react2.default.createElement('input', {
-              type: 'text',
-              placeholder: 'Search for a song to request',
-              value: this.state.query,
-              onChange: this.onChangeSearch,
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 68
-              },
-              __self: this
-            }),
-            _react2.default.createElement(
-              'i',
-              { className: 'material-icons cancel', onClick: this.clearSearch.bind(this), __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 74
-                },
-                __self: this
-              },
-              'cancel'
-            )
-          )
-        ),
-        _react2.default.createElement(_SearchResults2.default, { tracks: this.state.tracks, roomId: this.props.roomId, onSelectSong: this.clearSearch.bind(this), __source: {
-            fileName: _jsxFileName,
-            lineNumber: 77
-          },
-          __self: this
-        })
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'search-box'
+      }, void 0, (0, _jsx3.default)('div', {
+        className: 'search-bar'
+      }, void 0, (0, _jsx3.default)('div', {
+        className: 'placeholder'
+      }, void 0, _ref2, (0, _jsx3.default)('input', {
+        type: 'text',
+        placeholder: 'Search for a song to request',
+        value: this.state.query,
+        onChange: this.onChangeSearch
+      }), (0, _jsx3.default)('i', {
+        className: 'material-icons cancel',
+        onClick: this.clearSearch.bind(this)
+      }, void 0, 'cancel'))), (0, _jsx3.default)(_SearchResults2.default, {
+        tracks: this.state.tracks,
+        roomId: this.props.roomId,
+        onSelectSong: this.clearSearch.bind(this)
+      }));
     }
   }]);
   return SearchBox;
@@ -1116,13 +968,13 @@ var SearchBox = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_SearchBox2.default)(SearchBox);
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/extends");
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1132,49 +984,55 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/SongList/SongList.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _SongList = __webpack_require__(79);
+var _SongList = __webpack_require__(80);
 
 var _SongList2 = _interopRequireDefault(_SongList);
 
-var _base = __webpack_require__(12);
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _Song = __webpack_require__(44);
+var _Song = __webpack_require__(45);
 
 var _Song2 = _interopRequireDefault(_Song);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('h3', {}, void 0, 'Requested Songs');
+
+var _ref2 = (0, _jsx3.default)('hr', {});
 
 var SongList = function (_React$Component) {
   (0, _inherits3.default)(SongList, _React$Component);
@@ -1210,77 +1068,19 @@ var SongList = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'list-container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'h3',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 33
-            },
-            __self: this
-          },
-          'Requested Songs'
-        ),
-        _react2.default.createElement('hr', {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'div',
-          { className: 'container', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 35
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'table',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 36
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'tbody',
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 37
-                },
-                __self: this
-              },
-              this.state.queue.sort(function (a, b) {
-                return b.voteCount - a.voteCount;
-              }).map(function (song) {
-                return _react2.default.createElement(_Song2.default, {
-                  key: song.key,
-                  song: song,
-                  roomId: _this2.props.roomId,
-                  isDj: _this2.props.isDj,
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 41
-                  },
-                  __self: _this2
-                });
-              })
-            )
-          )
-        )
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'list-container'
+      }, void 0, _ref, _ref2, (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, (0, _jsx3.default)('table', {}, void 0, (0, _jsx3.default)('tbody', {}, void 0, this.state.queue.sort(function (a, b) {
+        return b.voteCount - a.voteCount;
+      }).map(function (song) {
+        return (0, _jsx3.default)(_Song2.default, {
+          song: song,
+          roomId: _this2.props.roomId,
+          isDj: _this2.props.isDj
+        }, song.key);
+      })))));
     }
   }]);
   return SongList;
@@ -1289,13 +1089,13 @@ var SongList = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_SongList2.default)(SongList);
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/core-js/get-iterator");
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1351,12 +1151,12 @@ var auth = exports.auth = {
 };
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(67);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(68);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -1386,7 +1186,7 @@ var auth = exports.auth = {
   
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1396,41 +1196,39 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = __webpack_require__(17);
+var _extends2 = __webpack_require__(18);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = __webpack_require__(84);
+var _objectWithoutProperties2 = __webpack_require__(85);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _getPrototypeOf = __webpack_require__(1);
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Link/Link.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _history = __webpack_require__(46);
+var _history = __webpack_require__(47);
 
 var _history2 = _interopRequireDefault(_history);
 
@@ -1486,12 +1284,7 @@ var Link = function (_React$Component) {
 
       return _react2.default.createElement(
         'a',
-        (0, _extends3.default)({ href: to }, props, { onClick: this.handleClick, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 39
-          },
-          __self: this
-        }),
+        (0, _extends3.default)({ href: to }, props, { onClick: this.handleClick }),
         children
       );
     }
@@ -1499,21 +1292,16 @@ var Link = function (_React$Component) {
   return Link;
 }(_react2.default.Component);
 
-Link.propTypes = {
-  to: _react.PropTypes.string.isRequired,
-  children: _react.PropTypes.node,
-  onClick: _react.PropTypes.func
-};
 exports.default = Link;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("reactstrap");
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1523,23 +1311,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -1610,216 +1398,8 @@ var App = function (_React$PureComponent) {
   return App;
 }(_react2.default.PureComponent);
 
-App.propTypes = {
-  context: _react.PropTypes.shape(ContextType).isRequired,
-  children: _react.PropTypes.element.isRequired
-};
 App.childContextTypes = ContextType;
 exports.default = App;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _getPrototypeOf = __webpack_require__(1);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Html.js'; /**
-                                                                                            * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                            *
-                                                                                            * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                            *
-                                                                                            * This source code is licensed under the MIT license found in the
-                                                                                            * LICENSE.txt file in the root directory of this source tree.
-                                                                                            */
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _config = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Html = function (_React$Component) {
-  (0, _inherits3.default)(Html, _React$Component);
-
-  function Html() {
-    (0, _classCallCheck3.default)(this, Html);
-    return (0, _possibleConstructorReturn3.default)(this, (Html.__proto__ || (0, _getPrototypeOf2.default)(Html)).apply(this, arguments));
-  }
-
-  (0, _createClass3.default)(Html, [{
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props = this.props,
-          title = _props.title,
-          description = _props.description,
-          style = _props.style,
-          scripts = _props.scripts,
-          children = _props.children;
-
-      return _react2.default.createElement(
-        'html',
-        { className: 'no-js', lang: 'en', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 25
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'head',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 26
-            },
-            __self: this
-          },
-          _react2.default.createElement('meta', { charSet: 'utf-8', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 27
-            },
-            __self: this
-          }),
-          _react2.default.createElement('meta', { httpEquiv: 'x-ua-compatible', content: 'ie=edge', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 28
-            },
-            __self: this
-          }),
-          _react2.default.createElement(
-            'title',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 29
-              },
-              __self: this
-            },
-            'Crowd DJ'
-          ),
-          _react2.default.createElement('meta', { name: 'description', content: description, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 30
-            },
-            __self: this
-          }),
-          _react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 31
-            },
-            __self: this
-          }),
-          _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 32
-            },
-            __self: this
-          }),
-          _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Rubik:400,500,700', rel: 'stylesheet', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 33
-            },
-            __self: this
-          }),
-          _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Asap:400,500,700', rel: 'stylesheet', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 34
-            },
-            __self: this
-          }),
-          _react2.default.createElement('link', { rel: 'apple-touch-icon', href: 'apple-touch-icon.png', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 35
-            },
-            __self: this
-          }),
-          style && _react2.default.createElement('style', { id: 'css', dangerouslySetInnerHTML: { __html: style }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 36
-            },
-            __self: this
-          })
-        ),
-        _react2.default.createElement(
-          'body',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 38
-            },
-            __self: this
-          },
-          _react2.default.createElement('div', { id: 'app', dangerouslySetInnerHTML: { __html: children }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: this
-          }),
-          scripts && scripts.map(function (script) {
-            return _react2.default.createElement('script', { key: script, src: script, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 40
-              },
-              __self: _this2
-            });
-          }),
-          _config.analytics.google.trackingId && _react2.default.createElement('script', {
-            dangerouslySetInnerHTML: { __html: 'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' + ('ga(\'create\',\'' + _config.analytics.google.trackingId + '\',\'auto\');ga(\'send\',\'pageview\')') },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 42
-            },
-            __self: this
-          }),
-          _config.analytics.google.trackingId && _react2.default.createElement('script', { src: 'https://www.google-analytics.com/analytics.js', async: true, defer: true, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 49
-            },
-            __self: this
-          })
-        )
-      );
-    }
-  }]);
-  return Html;
-}(_react2.default.Component);
-
-Html.propTypes = {
-  title: _react.PropTypes.string.isRequired,
-  description: _react.PropTypes.string.isRequired,
-  style: _react.PropTypes.string,
-  scripts: _react.PropTypes.arrayOf(_react.PropTypes.string.isRequired),
-  children: _react.PropTypes.string
-};
-exports.default = Html;
 
 /***/ }),
 /* 26 */
@@ -1831,152 +1411,99 @@ exports.default = Html;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ErrorPageWithoutStyle = undefined;
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/error/ErrorPage.js'; /**
-                                                                                                   * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                                   *
-                                                                                                   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                                   *
-                                                                                                   * This source code is licensed under the MIT license found in the
-                                                                                                   * LICENSE.txt file in the root directory of this source tree.
-                                                                                                   */
+var _jsx3 = _interopRequireDefault(_jsx2);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
-
-var _withStyles2 = _interopRequireDefault(_withStyles);
-
-var _ErrorPage = __webpack_require__(21);
-
-var _ErrorPage2 = _interopRequireDefault(_ErrorPage);
+var _config = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ErrorPage = function (_React$Component) {
-  (0, _inherits3.default)(ErrorPage, _React$Component);
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
 
-  function ErrorPage() {
-    (0, _classCallCheck3.default)(this, ErrorPage);
-    return (0, _possibleConstructorReturn3.default)(this, (ErrorPage.__proto__ || (0, _getPrototypeOf2.default)(ErrorPage)).apply(this, arguments));
-  }
+var _ref = (0, _jsx3.default)('meta', {
+  charSet: 'utf-8'
+});
 
-  (0, _createClass3.default)(ErrorPage, [{
-    key: 'render',
-    value: function render() {
-      if (true) {
-        var error = this.props.error;
+var _ref2 = (0, _jsx3.default)('meta', {
+  httpEquiv: 'x-ua-compatible',
+  content: 'ie=edge'
+});
 
-        return _react2.default.createElement(
-          'div',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 23
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'h1',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 24
-              },
-              __self: this
-            },
-            error.name
-          ),
-          _react2.default.createElement(
-            'p',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 25
-              },
-              __self: this
-            },
-            error.message
-          ),
-          _react2.default.createElement(
-            'pre',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 26
-              },
-              __self: this
-            },
-            error.stack
-          )
-        );
-      }
+var _ref3 = (0, _jsx3.default)('title', {}, void 0, 'Crowd DJ');
 
-      return _react2.default.createElement(
-        'div',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'h1',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 33
-            },
-            __self: this
-          },
-          'Error'
-        ),
-        _react2.default.createElement(
-          'p',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 34
-            },
-            __self: this
-          },
-          'Sorry, a critical error occurred on this page.'
-        )
-      );
-    }
-  }]);
-  return ErrorPage;
-}(_react2.default.Component);
+var _ref4 = (0, _jsx3.default)('meta', {
+  name: 'viewport',
+  content: 'width=device-width, initial-scale=1'
+});
 
-ErrorPage.propTypes = {
-  error: _react.PropTypes.object.isRequired
-};
-exports.ErrorPageWithoutStyle = ErrorPage;
-exports.default = (0, _withStyles2.default)(_ErrorPage2.default)(ErrorPage);
+var _ref5 = (0, _jsx3.default)('link', {
+  rel: 'stylesheet',
+  href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+});
+
+var _ref6 = (0, _jsx3.default)('link', {
+  href: 'https://fonts.googleapis.com/css?family=Rubik:400,500,700',
+  rel: 'stylesheet'
+});
+
+var _ref7 = (0, _jsx3.default)('link', {
+  href: 'https://fonts.googleapis.com/css?family=Asap:400,500,700',
+  rel: 'stylesheet'
+});
+
+var _ref8 = (0, _jsx3.default)('link', {
+  rel: 'apple-touch-icon',
+  href: 'apple-touch-icon.png'
+});
+
+var _ref9 = (0, _jsx3.default)('script', {
+  src: 'https://www.google-analytics.com/analytics.js',
+  async: true,
+  defer: true
+});
+
+function Html(props) {
+  var title = props.title,
+      description = props.description,
+      style = props.style,
+      scripts = props.scripts,
+      children = props.children;
+
+  return (0, _jsx3.default)('html', {
+    className: 'no-js',
+    lang: 'en'
+  }, void 0, (0, _jsx3.default)('head', {}, void 0, _ref, _ref2, _ref3, (0, _jsx3.default)('meta', {
+    name: 'description',
+    content: description
+  }), _ref4, _ref5, _ref6, _ref7, _ref8, style && (0, _jsx3.default)('style', {
+    id: 'css',
+    dangerouslySetInnerHTML: { __html: style }
+  })), (0, _jsx3.default)('body', {}, void 0, (0, _jsx3.default)('div', {
+    id: 'app',
+    dangerouslySetInnerHTML: { __html: children }
+  }), scripts && scripts.map(function (script) {
+    return (0, _jsx3.default)('script', {
+      src: script
+    }, script);
+  }), _config.analytics.google.trackingId && (0, _jsx3.default)('script', {
+    dangerouslySetInnerHTML: { __html: 'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' + ('ga(\'create\',\'' + _config.analytics.google.trackingId + '\',\'auto\');ga(\'send\',\'pageview\')') }
+  }), _config.analytics.google.trackingId && _ref9));
+}
+
+exports.default = Html;
 
 /***/ }),
 /* 27 */
@@ -1988,12 +1515,64 @@ exports.default = (0, _withStyles2.default)(_ErrorPage2.default)(ErrorPage);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.ErrorPageWithoutStyle = undefined;
 
-var _regenerator = __webpack_require__(10);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _withStyles = __webpack_require__(8);
+
+var _withStyles2 = _interopRequireDefault(_withStyles);
+
+var _ErrorPage = __webpack_require__(22);
+
+var _ErrorPage2 = _interopRequireDefault(_ErrorPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('div', {}, void 0, (0, _jsx3.default)('h1', {}, void 0, 'Error'), (0, _jsx3.default)('p', {}, void 0, 'Sorry, a critical error occurred on this page.')); /**
+                                                                                                                                                                                         * React Starter Kit (https://www.reactstarterkit.com/)
+                                                                                                                                                                                         *
+                                                                                                                                                                                         * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                                                                                                                                                         *
+                                                                                                                                                                                         * This source code is licensed under the MIT license found in the
+                                                                                                                                                                                         * LICENSE.txt file in the root directory of this source tree.
+                                                                                                                                                                                         */
+
+function ErrorPage(props) {
+  if (false) {
+    var error = props.error;
+
+    return (0, _jsx3.default)('div', {}, void 0, (0, _jsx3.default)('h1', {}, void 0, error.name), (0, _jsx3.default)('p', {}, void 0, error.message), (0, _jsx3.default)('pre', {}, void 0, error.stack));
+  }
+
+  return _ref;
+}
+
+exports.ErrorPageWithoutStyle = ErrorPage;
+exports.default = (0, _withStyles2.default)(_ErrorPage2.default)(ErrorPage);
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
@@ -2007,10 +1586,10 @@ exports.default = {
   path: '/',
 
   // Keep in mind, routes are evaluated in order
-  children: [__webpack_require__(50).default, __webpack_require__(54).default, __webpack_require__(48).default, __webpack_require__(56).default,
+  children: [__webpack_require__(51).default, __webpack_require__(55).default, __webpack_require__(49).default, __webpack_require__(57).default,
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
-  __webpack_require__(52).default],
+  __webpack_require__(53).default],
 
   action: function action(_ref) {
     var _this = this;
@@ -2046,73 +1625,73 @@ exports.default = {
 };
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = require("./assets");
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-polyfill");
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/core-js/set");
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/toConsumableArray");
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/typeof");
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("cookie-parser");
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("express");
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("pretty-error");
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("universal-router");
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2122,41 +1701,50 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Header/Header.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _Header = __webpack_require__(70);
+var _Header = __webpack_require__(71);
 
 var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('div', {
+  className: 'header'
+}, void 0, (0, _jsx3.default)('a', {
+  className: 'title',
+  href: '/'
+}, void 0, 'CrowdDJ'));
 
 var Header = function (_React$Component) {
   (0, _inherits3.default)(Header, _React$Component);
@@ -2183,25 +1771,7 @@ var Header = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'header', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 24
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'a',
-          { className: 'title', href: '/', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 25
-            },
-            __self: this
-          },
-          'CrowdDJ'
-        )
-      );
+      return _ref;
     }
   }]);
   return Header;
@@ -2210,7 +1780,7 @@ var Header = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_Header2.default)(Header);
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2220,37 +1790,39 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/NowPlayingRating/NowPlayingRating.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _NowPlayingRating = __webpack_require__(73);
+var _NowPlayingRating = __webpack_require__(74);
 
 var _NowPlayingRating2 = _interopRequireDefault(_NowPlayingRating);
 
@@ -2313,42 +1885,22 @@ var NowPlayingRating = function (_React$Component) {
 
       var rating = this.state.confirmed ? this.state.confirmRating : this.state.rating;
       if (index < rating) {
-        return _react2.default.createElement(
-          'i',
-          {
-            key: index,
-            className: 'material-icons heart',
-            onMouseOver: function onMouseOver() {
-              return _this3.setRating(index + 1);
-            },
-            onClick: function onClick() {
-              return _this3.confirmRating(index + 1);
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 48
-            },
-            __self: this
+        return (0, _jsx3.default)('i', {
+          className: 'material-icons heart',
+          onMouseOver: function onMouseOver() {
+            return _this3.setRating(index + 1);
           },
-          'favorite_solid'
-        );
+          onClick: function onClick() {
+            return _this3.confirmRating(index + 1);
+          }
+        }, index, 'favorite_solid');
       } else {
-        return _react2.default.createElement(
-          'i',
-          {
-            key: index,
-            className: 'material-icons heart',
-            onMouseOver: function onMouseOver() {
-              return _this3.setRating(index + 1);
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 59
-            },
-            __self: this
-          },
-          'favorite_border'
-        );
+        return (0, _jsx3.default)('i', {
+          className: 'material-icons heart',
+          onMouseOver: function onMouseOver() {
+            return _this3.setRating(index + 1);
+          }
+        }, index, 'favorite_border');
       }
     }
   }, {
@@ -2356,18 +1908,12 @@ var NowPlayingRating = function (_React$Component) {
     value: function render() {
       var _this4 = this;
 
-      return _react2.default.createElement(
-        'span',
-        { className: 'rating', onMouseLeave: this.resetRating, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 72
-          },
-          __self: this
-        },
-        [0, 1, 2, 3, 4].map(function (index) {
-          return _this4.renderHeart(index);
-        })
-      );
+      return (0, _jsx3.default)('span', {
+        className: 'rating',
+        onMouseLeave: this.resetRating
+      }, void 0, [0, 1, 2, 3, 4].map(function (index) {
+        return _this4.renderHeart(index);
+      }));
     }
   }]);
   return NowPlayingRating;
@@ -2376,7 +1922,7 @@ var NowPlayingRating = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_NowPlayingRating2.default)(NowPlayingRating);
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2386,47 +1932,57 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/PlayedSong/PlayedSong.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _PlayedSong = __webpack_require__(74);
+var _PlayedSong = __webpack_require__(75);
 
 var _PlayedSong2 = _interopRequireDefault(_PlayedSong);
 
-var _base = __webpack_require__(12);
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('td', {
+  className: 'ranking'
+});
+
+var _ref2 = (0, _jsx3.default)('i', {
+  className: 'material-icons'
+}, void 0, 'favorite_solid');
 
 var PlayedSong = function (_React$Component) {
   (0, _inherits3.default)(PlayedSong, _React$Component);
@@ -2468,80 +2024,17 @@ var PlayedSong = function (_React$Component) {
           roomId = _props.roomId,
           isDj = _props.isDj;
 
-      return _react2.default.createElement(
-        'tr',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        },
-        _react2.default.createElement('td', { className: 'ranking', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 35
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'td',
-          { className: 'name-artist', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 36
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'span',
-            { className: 'name', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 37
-              },
-              __self: this
-            },
-            song.name
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'artist', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 38
-              },
-              __self: this
-            },
-            song.artist
-          )
-        ),
-        _react2.default.createElement(
-          'td',
-          { className: 'vote', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 40
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'i',
-            { className: 'material-icons', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 41
-              },
-              __self: this
-            },
-            'favorite_solid'
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'upvotes', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 42
-              },
-              __self: this
-            },
-            song.rating.toString().substring(0, 3)
-          )
-        )
-      );
+      return (0, _jsx3.default)('tr', {}, void 0, _ref, (0, _jsx3.default)('td', {
+        className: 'name-artist'
+      }, void 0, (0, _jsx3.default)('span', {
+        className: 'name'
+      }, void 0, song.name), (0, _jsx3.default)('span', {
+        className: 'artist'
+      }, void 0, song.artist)), (0, _jsx3.default)('td', {
+        className: 'vote'
+      }, void 0, _ref2, (0, _jsx3.default)('span', {
+        className: 'upvotes'
+      }, void 0, song.rating.toString().substring(0, 3))));
     }
   }]);
   return PlayedSong;
@@ -2550,7 +2043,7 @@ var PlayedSong = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_PlayedSong2.default)(PlayedSong);
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2560,49 +2053,55 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Playlist/Playlist.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _Playlist = __webpack_require__(75);
+var _Playlist = __webpack_require__(76);
 
 var _Playlist2 = _interopRequireDefault(_Playlist);
 
-var _base = __webpack_require__(12);
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _PlayedSong = __webpack_require__(41);
+var _PlayedSong = __webpack_require__(42);
 
 var _PlayedSong2 = _interopRequireDefault(_PlayedSong);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('h3', {}, void 0, 'Party Playlist');
+
+var _ref2 = (0, _jsx3.default)('hr', {});
 
 var Playlist = function (_React$Component) {
   (0, _inherits3.default)(Playlist, _React$Component);
@@ -2638,77 +2137,19 @@ var Playlist = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'list-container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'h3',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 33
-            },
-            __self: this
-          },
-          'Party Playlist'
-        ),
-        _react2.default.createElement('hr', {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'div',
-          { className: 'container', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 35
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'table',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 36
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'tbody',
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 37
-                },
-                __self: this
-              },
-              this.state.played.sort(function (a, b) {
-                return b.voteCount - a.voteCount;
-              }).map(function (song) {
-                return _react2.default.createElement(_PlayedSong2.default, {
-                  key: song.key,
-                  song: song,
-                  roomId: _this2.props.roomId,
-                  isDj: _this2.props.isDj,
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 41
-                  },
-                  __self: _this2
-                });
-              })
-            )
-          )
-        )
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'list-container'
+      }, void 0, _ref, _ref2, (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, (0, _jsx3.default)('table', {}, void 0, (0, _jsx3.default)('tbody', {}, void 0, this.state.played.sort(function (a, b) {
+        return b.voteCount - a.voteCount;
+      }).map(function (song) {
+        return (0, _jsx3.default)(_PlayedSong2.default, {
+          song: song,
+          roomId: _this2.props.roomId,
+          isDj: _this2.props.isDj
+        }, song.key);
+      })))));
     }
   }]);
   return Playlist;
@@ -2717,7 +2158,7 @@ var Playlist = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_Playlist2.default)(Playlist);
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2727,49 +2168,51 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getIterator2 = __webpack_require__(19);
+var _getIterator2 = __webpack_require__(20);
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/SearchResults/SearchResults.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _SearchResults = __webpack_require__(77);
+var _SearchResults = __webpack_require__(78);
 
 var _SearchResults2 = _interopRequireDefault(_SearchResults);
 
-var _base = __webpack_require__(12);
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2808,61 +2251,20 @@ var SearchResults = function (_React$Component) {
       var _this2 = this;
 
       if (this.props.tracks.length > 0) {
-        return _react2.default.createElement(
-          'div',
-          { className: 'search-results-tracks', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 32
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'ul',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 33
-              },
-              __self: this
-            },
-            this.props.tracks.map(function (track) {
-              return _react2.default.createElement(
-                'li',
-                {
-                  key: track.id, onClick: function onClick() {
-                    _this2.addTrackToQueue(track);
-                    _this2.props.onSelectSong();
-                  },
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 35
-                  },
-                  __self: _this2
-                },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'track-name', __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 41
-                    },
-                    __self: _this2
-                  },
-                  track.name
-                ),
-                _react2.default.createElement(
-                  'span',
-                  { className: 'track-artist-name', __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 42
-                    },
-                    __self: _this2
-                  },
-                  track.artists[0].name
-                )
-              );
-            })
-          )
-        );
+        return (0, _jsx3.default)('div', {
+          className: 'search-results-tracks'
+        }, void 0, (0, _jsx3.default)('ul', {}, void 0, this.props.tracks.map(function (track) {
+          return (0, _jsx3.default)('li', {
+            onClick: function onClick() {
+              _this2.addTrackToQueue(track);
+              _this2.props.onSelectSong();
+            }
+          }, track.id, (0, _jsx3.default)('span', {
+            className: 'track-name'
+          }, void 0, track.name), (0, _jsx3.default)('span', {
+            className: 'track-artist-name'
+          }, void 0, track.artists[0].name));
+        })));
       } else {
         return null;
       }
@@ -2918,16 +2320,9 @@ var SearchResults = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'search-results', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 81
-          },
-          __self: this
-        },
-        this.renderTracks()
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'search-results'
+      }, void 0, this.renderTracks());
     }
   }]);
   return SearchResults;
@@ -2936,7 +2331,7 @@ var SearchResults = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_SearchResults2.default)(SearchResults);
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2946,51 +2341,65 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = __webpack_require__(17);
+var _extends2 = __webpack_require__(18);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/components/Song/Song.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _Song = __webpack_require__(78);
+var _Song = __webpack_require__(79);
 
 var _Song2 = _interopRequireDefault(_Song);
 
-var _base = __webpack_require__(12);
+var _base = __webpack_require__(13);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)('td', {
+  className: 'ranking'
+});
+
+var _ref2 = (0, _jsx3.default)('i', {
+  className: 'material-icons'
+}, void 0, 'cancel');
+
+var _ref3 = (0, _jsx3.default)('i', {
+  className: 'material-icons'
+}, void 0, 'thumb_up');
 
 var Song = function (_React$Component) {
   (0, _inherits3.default)(Song, _React$Component);
@@ -3030,109 +2439,23 @@ var Song = function (_React$Component) {
           roomId = _props.roomId,
           isDj = _props.isDj;
 
-      return _react2.default.createElement(
-        'tr',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
-        },
-        _react2.default.createElement('td', { className: 'ranking', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 33
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'td',
-          { className: 'name-artist', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 34
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'span',
-            { className: 'name', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 35
-              },
-              __self: this
-            },
-            song.name
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'artist', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 36
-              },
-              __self: this
-            },
-            song.artist
-          )
-        ),
-        isDj && _react2.default.createElement(
-          'td',
-          { className: 'vote', onClick: this.remove, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'span',
-            { className: 'upvotes', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 40
-              },
-              __self: this
-            },
-            this.state.song.voteCount
-          ),
-          _react2.default.createElement(
-            'i',
-            { className: 'material-icons', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 41
-              },
-              __self: this
-            },
-            'cancel'
-          )
-        ),
-        !isDj && _react2.default.createElement(
-          'td',
-          { className: 'vote', onClick: this.upvote, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 45
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'i',
-            { className: 'material-icons', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 46
-              },
-              __self: this
-            },
-            'thumb_up'
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'upvotes', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 47
-              },
-              __self: this
-            },
-            this.state.song.voteCount
-          )
-        )
-      );
+      return (0, _jsx3.default)('tr', {}, void 0, _ref, (0, _jsx3.default)('td', {
+        className: 'name-artist'
+      }, void 0, (0, _jsx3.default)('span', {
+        className: 'name'
+      }, void 0, song.name), (0, _jsx3.default)('span', {
+        className: 'artist'
+      }, void 0, song.artist)), isDj && (0, _jsx3.default)('td', {
+        className: 'vote',
+        onClick: this.remove
+      }, void 0, (0, _jsx3.default)('span', {
+        className: 'upvotes'
+      }, void 0, this.state.song.voteCount), _ref2), !isDj && (0, _jsx3.default)('td', {
+        className: 'vote',
+        onClick: this.upvote
+      }, void 0, _ref3, (0, _jsx3.default)('span', {
+        className: 'upvotes'
+      }, void 0, this.state.song.voteCount)));
     }
   }, {
     key: 'upvote',
@@ -3157,7 +2480,7 @@ var Song = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_Song2.default)(Song);
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3174,7 +2497,7 @@ var cookies = {
 exports.default = cookies;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3184,7 +2507,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createBrowserHistory = __webpack_require__(86);
+var _createBrowserHistory = __webpack_require__(87);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -3202,7 +2525,7 @@ exports.default = false && (0, _createBrowserHistory2.default)(); /**
                                                                                  */
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3212,49 +2535,55 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/dj/Dj.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SearchBox = __webpack_require__(16);
+var _SearchBox = __webpack_require__(17);
 
 var _SearchBox2 = _interopRequireDefault(_SearchBox);
 
-var _SongList = __webpack_require__(18);
+var _SongList = __webpack_require__(19);
 
 var _SongList2 = _interopRequireDefault(_SongList);
 
-var _NowPlaying = __webpack_require__(15);
+var _NowPlaying = __webpack_require__(16);
 
 var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
 
-var _Layout = __webpack_require__(14);
+var _Layout = __webpack_require__(15);
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)(_Layout2.default, {});
+
+var _ref2 = (0, _jsx3.default)('br', {});
 
 var Dj = function (_React$Component) {
   (0, _inherits3.default)(Dj, _React$Component);
@@ -3271,57 +2600,24 @@ var Dj = function (_React$Component) {
   (0, _createClass3.default)(Dj, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-          },
-          __self: this
-        },
-        _react2.default.createElement(_Layout2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 20
-          },
-          __self: this
-        }),
-        _react2.default.createElement('br', {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_SongList2.default, {
-          isDj: true,
-          roomId: this.props.name, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_NowPlaying2.default, {
-          roomId: this.props.name,
-          isDj: true, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 25
-          },
-          __self: this
-        })
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, _ref, _ref2, (0, _jsx3.default)(_SongList2.default, {
+        isDj: true,
+        roomId: this.props.name
+      }), (0, _jsx3.default)(_NowPlaying2.default, {
+        roomId: this.props.name,
+        isDj: true
+      }));
     }
   }]);
   return Dj;
 }(_react2.default.Component);
 
-Dj.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired
-};
 exports.default = Dj;
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3331,21 +2627,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/dj/index.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Dj = __webpack_require__(47);
+var _Dj = __webpack_require__(48);
 
 var _Dj2 = _interopRequireDefault(_Dj);
 
@@ -3365,11 +2663,8 @@ exports.default = {
             case 0:
               return _context.abrupt('return', {
                 title: context.params.room,
-                component: _react2.default.createElement(_Dj2.default, { name: context.params.room, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 12
-                  },
-                  __self: _this
+                component: (0, _jsx3.default)(_Dj2.default, {
+                  name: context.params.room
                 })
               });
 
@@ -3384,7 +2679,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3394,69 +2689,114 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/home/Home.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _jquery = __webpack_require__(87);
+var _jquery = __webpack_require__(88);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _withStyles = __webpack_require__(7);
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _reactstrap = __webpack_require__(23);
+var _reactstrap = __webpack_require__(24);
 
-var _Link = __webpack_require__(22);
+var _Link = __webpack_require__(23);
 
 var _Link2 = _interopRequireDefault(_Link);
 
-var _NowPlaying = __webpack_require__(15);
+var _NowPlaying = __webpack_require__(16);
 
 var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
 
-var _SearchBox = __webpack_require__(16);
+var _SearchBox = __webpack_require__(17);
 
 var _SearchBox2 = _interopRequireDefault(_SearchBox);
 
-var _SongList = __webpack_require__(18);
+var _SongList = __webpack_require__(19);
 
 var _SongList2 = _interopRequireDefault(_SongList);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
-var _Layout = __webpack_require__(14);
+var _Layout = __webpack_require__(15);
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-var _Home = __webpack_require__(80);
+var _Home = __webpack_require__(81);
 
 var _Home2 = _interopRequireDefault(_Home);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)(_Layout2.default, {});
+
+var _ref2 = (0, _jsx3.default)('div', {
+  className: 'copy'
+}, void 0, (0, _jsx3.default)('div', {
+  className: 'title'
+}, void 0, 'Want to stay in the spotify queue tonight?'), (0, _jsx3.default)('p', {
+  className: 'desc'
+}, void 0, 'This app let\u2019s you recommend songs for your DJ\u2028 friend to play throughout the night, updating in\u2028 real time, so they can finally take your suggestions seriously!'), (0, _jsx3.default)('p', {
+  className: 'desc'
+}, void 0, 'Or they\u2019ll keep ignoring you as usual.'));
+
+var _ref3 = (0, _jsx3.default)('span', {
+  className: 'caption'
+}, void 0, (0, _jsx3.default)('span', {
+  className: 'cap1'
+}, void 0, 'Join your DJ\'s party now!'), (0, _jsx3.default)('span', {
+  className: 'cap2'
+}, void 0, 'Enter your party\'s key!'));
+
+var _ref4 = (0, _jsx3.default)('span', {
+  className: 'extra'
+}, void 0, 'A Party');
+
+var _ref5 = (0, _jsx3.default)('span', {
+  className: 'caption'
+}, void 0, (0, _jsx3.default)('span', {
+  className: 'cap1'
+}, void 0, 'Be the DJ friend!'), (0, _jsx3.default)('span', {
+  className: 'cap2'
+}, void 0, 'Create your party\'s key!'));
+
+var _ref6 = (0, _jsx3.default)('div', {
+  className: 'input-container'
+}, void 0, (0, _jsx3.default)('input', {
+  id: 'create-room-name',
+  type: 'text'
+}));
+
+var _ref7 = (0, _jsx3.default)('span', {
+  className: 'extra'
+}, void 0, 'A Party');
 
 var Home = function (_React$Component) {
   (0, _inherits3.default)(Home, _React$Component);
@@ -3514,219 +2854,33 @@ var Home = function (_React$Component) {
       console.log('Has song named test: ' + (0, _utils.hasAddedSong)({ name: 'test' }));
       console.log('Has song named nottest: ' + (0, _utils.hasAddedSong)({ name: 'nottest' }));
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 62
-          },
-          __self: this
-        },
-        _react2.default.createElement(_Layout2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 63
-          },
-          __self: this
-        }),
-        _react2.default.createElement(
-          'div',
-          { className: 'copy', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 64
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'div',
-            { className: 'title', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 65
-              },
-              __self: this
-            },
-            'Want to stay in the spotify queue tonight?'
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'desc', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 66
-              },
-              __self: this
-            },
-            'This app let\u2019s you recommend songs for your DJ\u2028 friend to play throughout the night, updating in\u2028 real time, so they can finally take your suggestions seriously!'
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'desc', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 69
-              },
-              __self: this
-            },
-            'Or they\u2019ll keep ignoring you as usual.'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'button-container join-button', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 72
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'span',
-            { className: 'caption', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 73
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'span',
-              { className: 'cap1', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 74
-                },
-                __self: this
-              },
-              'Join your DJ\'s party now!'
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: 'cap2', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 75
-                },
-                __self: this
-              },
-              'Enter your party\'s key!'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'input-container', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 77
-              },
-              __self: this
-            },
-            _react2.default.createElement('input', { id: 'join-room-name', type: 'text', onkeydown: this.checkEnter.bind(this), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 78
-              },
-              __self: this
-            })
-          ),
-          _react2.default.createElement('div', { className: 'overlay-join', onClick: this.join.bind(this), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 80
-            },
-            __self: this
-          }),
-          _react2.default.createElement(
-            'a',
-            { className: 'join', href: '#', onClick: this.parseJoinInput.bind(this), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 81
-              },
-              __self: this
-            },
-            'Join ',
-            _react2.default.createElement(
-              'span',
-              { className: 'extra', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 81
-                },
-                __self: this
-              },
-              'A Party'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'button-container create-button', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 84
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'span',
-            { className: 'caption', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 85
-              },
-              __self: this
-            },
-            _react2.default.createElement(
-              'span',
-              { className: 'cap1', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 86
-                },
-                __self: this
-              },
-              'Be the DJ friend!'
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: 'cap2', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 87
-                },
-                __self: this
-              },
-              'Create your party\'s key!'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'input-container', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 89
-              },
-              __self: this
-            },
-            _react2.default.createElement('input', { id: 'create-room-name', type: 'text', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 90
-              },
-              __self: this
-            })
-          ),
-          _react2.default.createElement('div', { className: 'overlay-create', onClick: this.create.bind(this), __source: {
-              fileName: _jsxFileName,
-              lineNumber: 92
-            },
-            __self: this
-          }),
-          _react2.default.createElement(
-            'a',
-            { className: 'create', href: '#', onClick: this.parseCreateInput.bind(this), __source: {
-                fileName: _jsxFileName,
-                lineNumber: 93
-              },
-              __self: this
-            },
-            'Create ',
-            _react2.default.createElement(
-              'span',
-              { className: 'extra', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 93
-                },
-                __self: this
-              },
-              'A Party'
-            )
-          )
-        )
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, _ref, _ref2, (0, _jsx3.default)('div', {
+        className: 'button-container join-button'
+      }, void 0, _ref3, (0, _jsx3.default)('div', {
+        className: 'input-container'
+      }, void 0, (0, _jsx3.default)('input', {
+        id: 'join-room-name',
+        type: 'text',
+        onkeydown: this.checkEnter.bind(this)
+      })), (0, _jsx3.default)('div', {
+        className: 'overlay-join',
+        onClick: this.join.bind(this)
+      }), (0, _jsx3.default)('a', {
+        className: 'join',
+        href: '#',
+        onClick: this.parseJoinInput.bind(this)
+      }, void 0, 'Join ', _ref4)), (0, _jsx3.default)('div', {
+        className: 'button-container create-button'
+      }, void 0, _ref5, _ref6, (0, _jsx3.default)('div', {
+        className: 'overlay-create',
+        onClick: this.create.bind(this)
+      }), (0, _jsx3.default)('a', {
+        className: 'create',
+        href: '#',
+        onClick: this.parseCreateInput.bind(this)
+      }, void 0, 'Create ', _ref7)));
     }
   }]);
   return Home;
@@ -3735,7 +2889,7 @@ var Home = function (_React$Component) {
 exports.default = (0, _withStyles2.default)(_Home2.default)(Home);
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3745,21 +2899,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/home/index.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Home = __webpack_require__(49);
+var _Home = __webpack_require__(50);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -3783,11 +2939,8 @@ exports.default = {
               };
               return _context.abrupt('return', {
                 title: 'React Starter Kit',
-                component: _react2.default.createElement(_Home2.default, { news: data.news, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 15
-                  },
-                  __self: _this
+                component: (0, _jsx3.default)(_Home2.default, {
+                  news: data.news
                 })
               });
 
@@ -3802,121 +2955,6 @@ exports.default = {
 };
 
 /***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _getPrototypeOf = __webpack_require__(1);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/notFound/NotFound.js'; /**
-                                                                                                     * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                                     *
-                                                                                                     * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                                     *
-                                                                                                     * This source code is licensed under the MIT license found in the
-                                                                                                     * LICENSE.txt file in the root directory of this source tree.
-                                                                                                     */
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _withStyles = __webpack_require__(7);
-
-var _withStyles2 = _interopRequireDefault(_withStyles);
-
-var _NotFound = __webpack_require__(81);
-
-var _NotFound2 = _interopRequireDefault(_NotFound);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var NotFound = function (_React$Component) {
-  (0, _inherits3.default)(NotFound, _React$Component);
-
-  function NotFound() {
-    (0, _classCallCheck3.default)(this, NotFound);
-    return (0, _possibleConstructorReturn3.default)(this, (NotFound.__proto__ || (0, _getPrototypeOf2.default)(NotFound)).apply(this, arguments));
-  }
-
-  (0, _createClass3.default)(NotFound, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: _NotFound2.default.root, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          },
-          __self: this
-        },
-        _react2.default.createElement(
-          'div',
-          { className: _NotFound2.default.container, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 22
-            },
-            __self: this
-          },
-          _react2.default.createElement(
-            'h1',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 23
-              },
-              __self: this
-            },
-            this.props.title
-          ),
-          _react2.default.createElement(
-            'p',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 24
-              },
-              __self: this
-            },
-            'Sorry, the page you were trying to view does not exist.'
-          )
-        )
-      );
-    }
-  }]);
-  return NotFound;
-}(_react2.default.Component);
-
-NotFound.propTypes = {
-  title: _react.PropTypes.string.isRequired
-};
-exports.default = (0, _withStyles2.default)(_NotFound2.default)(NotFound);
-
-/***/ }),
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3926,58 +2964,43 @@ exports.default = (0, _withStyles2.default)(_NotFound2.default)(NotFound);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/notFound/index.js'; /**
-                                                                                                  * React Starter Kit (https://www.reactstarterkit.com/)
-                                                                                                  *
-                                                                                                  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                                                                                  *
-                                                                                                  * This source code is licensed under the MIT license found in the
-                                                                                                  * LICENSE.txt file in the root directory of this source tree.
-                                                                                                  */
+
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Layout = __webpack_require__(14);
+var _withStyles = __webpack_require__(8);
 
-var _Layout2 = _interopRequireDefault(_Layout);
+var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _NotFound = __webpack_require__(51);
+var _NotFound = __webpack_require__(82);
 
 var _NotFound2 = _interopRequireDefault(_NotFound);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var title = 'Page Not Found';
+var _ref = (0, _jsx3.default)('p', {}, void 0, 'Sorry, the page you were trying to view does not exist.'); /**
+                                                                                                            * React Starter Kit (https://www.reactstarterkit.com/)
+                                                                                                            *
+                                                                                                            * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                                                                            *
+                                                                                                            * This source code is licensed under the MIT license found in the
+                                                                                                            * LICENSE.txt file in the root directory of this source tree.
+                                                                                                            */
 
-exports.default = {
+function NotFound(props) {
+  return (0, _jsx3.default)('div', {
+    className: _NotFound2.default.root
+  }, void 0, (0, _jsx3.default)('div', {
+    className: _NotFound2.default.container
+  }, void 0, (0, _jsx3.default)('h1', {}, void 0, props.title), _ref));
+}
 
-  path: '*',
-
-  action: function action() {
-    return {
-      title: title,
-      component: _react2.default.createElement(
-        _Layout2.default,
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 23
-          },
-          __self: this
-        },
-        _react2.default.createElement(_NotFound2.default, { title: title, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 23
-          },
-          __self: this
-        })
-      ),
-      status: 404
-    };
-  }
-};
+exports.default = (0, _withStyles2.default)(_NotFound2.default)(NotFound);
 
 /***/ }),
 /* 53 */
@@ -3990,61 +3013,120 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(5);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(4);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/room/Room.js';
+var _jsx3 = _interopRequireDefault(_jsx2);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _withStyles = __webpack_require__(7);
+var _Layout = __webpack_require__(15);
+
+var _Layout2 = _interopRequireDefault(_Layout);
+
+var _NotFound = __webpack_require__(52);
+
+var _NotFound2 = _interopRequireDefault(_NotFound);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var title = 'Page Not Found'; /**
+                               * React Starter Kit (https://www.reactstarterkit.com/)
+                               *
+                               * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                               *
+                               * This source code is licensed under the MIT license found in the
+                               * LICENSE.txt file in the root directory of this source tree.
+                               */
+
+var _ref = (0, _jsx3.default)(_Layout2.default, {}, void 0, (0, _jsx3.default)(_NotFound2.default, {
+  title: title
+}));
+
+exports.default = {
+
+  path: '*',
+
+  action: function action() {
+    return {
+      title: title,
+      component: _ref,
+      status: 404
+    };
+  }
+};
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(3);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(4);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(6);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(5);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _withStyles = __webpack_require__(8);
 
 var _withStyles2 = _interopRequireDefault(_withStyles);
 
-var _reactstrap = __webpack_require__(23);
+var _reactstrap = __webpack_require__(24);
 
-var _Link = __webpack_require__(22);
+var _Link = __webpack_require__(23);
 
 var _Link2 = _interopRequireDefault(_Link);
 
-var _NowPlaying = __webpack_require__(15);
+var _NowPlaying = __webpack_require__(16);
 
 var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
 
-var _SearchBox = __webpack_require__(16);
+var _SearchBox = __webpack_require__(17);
 
 var _SearchBox2 = _interopRequireDefault(_SearchBox);
 
-var _SongList = __webpack_require__(18);
+var _SongList = __webpack_require__(19);
 
 var _SongList2 = _interopRequireDefault(_SongList);
 
-var _utils = __webpack_require__(13);
+var _utils = __webpack_require__(14);
 
-var _Layout = __webpack_require__(14);
+var _Layout = __webpack_require__(15);
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)(_Layout2.default, {});
 
 var Room = function (_React$Component) {
   (0, _inherits3.default)(Room, _React$Component);
@@ -4068,52 +3150,24 @@ var Room = function (_React$Component) {
       console.log('Has song named test: ' + (0, _utils.hasAddedSong)({ name: 'test' }));
       console.log('Has song named nottest: ' + (0, _utils.hasAddedSong)({ name: 'nottest' }));
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30
-          },
-          __self: this
-        },
-        _react2.default.createElement(_Layout2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_SearchBox2.default, { roomId: this.props.name, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_SongList2.default, { roomId: this.props.name, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 33
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_NowPlaying2.default, { roomId: this.props.name, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
-        })
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, _ref, (0, _jsx3.default)(_SearchBox2.default, {
+        roomId: this.props.name
+      }), (0, _jsx3.default)(_SongList2.default, {
+        roomId: this.props.name
+      }), (0, _jsx3.default)(_NowPlaying2.default, {
+        roomId: this.props.name
+      }));
     }
   }]);
   return Room;
 }(_react2.default.Component);
 
-Room.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired
-};
 exports.default = Room;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4123,21 +3177,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/room/index.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Room = __webpack_require__(53);
+var _Room = __webpack_require__(54);
 
 var _Room2 = _interopRequireDefault(_Room);
 
@@ -4157,11 +3213,8 @@ exports.default = {
             case 0:
               return _context.abrupt('return', {
                 title: 'Music Room',
-                component: _react2.default.createElement(_Room2.default, { name: context.params.room, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 13
-                  },
-                  __self: _this
+                component: (0, _jsx3.default)(_Room2.default, {
+                  name: context.params.room
                 })
               });
 
@@ -4176,7 +3229,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4186,49 +3239,55 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _getPrototypeOf = __webpack_require__(2);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = __webpack_require__(2);
+var _classCallCheck2 = __webpack_require__(3);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(3);
+var _createClass2 = __webpack_require__(4);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = __webpack_require__(5);
+var _possibleConstructorReturn2 = __webpack_require__(6);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = __webpack_require__(4);
+var _inherits2 = __webpack_require__(5);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/roomlist/RoomList.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SearchBox = __webpack_require__(16);
+var _SearchBox = __webpack_require__(17);
 
 var _SearchBox2 = _interopRequireDefault(_SearchBox);
 
-var _Playlist = __webpack_require__(42);
+var _Playlist = __webpack_require__(43);
 
 var _Playlist2 = _interopRequireDefault(_Playlist);
 
-var _NowPlaying = __webpack_require__(15);
+var _NowPlaying = __webpack_require__(16);
 
 var _NowPlaying2 = _interopRequireDefault(_NowPlaying);
 
-var _Layout = __webpack_require__(14);
+var _Layout = __webpack_require__(15);
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _ref = (0, _jsx3.default)(_Layout2.default, {});
+
+var _ref2 = (0, _jsx3.default)('br', {});
 
 var RoomList = function (_React$Component) {
   (0, _inherits3.default)(RoomList, _React$Component);
@@ -4245,49 +3304,21 @@ var RoomList = function (_React$Component) {
   (0, _createClass3.default)(RoomList, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-          },
-          __self: this
-        },
-        _react2.default.createElement(_Layout2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 20
-          },
-          __self: this
-        }),
-        _react2.default.createElement('br', {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          },
-          __self: this
-        }),
-        _react2.default.createElement(_Playlist2.default, {
-          isDj: true,
-          roomId: this.props.name, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          },
-          __self: this
-        })
-      );
+      return (0, _jsx3.default)('div', {
+        className: 'container'
+      }, void 0, _ref, _ref2, (0, _jsx3.default)(_Playlist2.default, {
+        isDj: true,
+        roomId: this.props.name
+      }));
     }
   }]);
   return RoomList;
 }(_react2.default.Component);
 
-RoomList.propTypes = {
-  name: _react2.default.PropTypes.string.isRequired
-};
 exports.default = RoomList;
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4297,21 +3328,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
-
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/routes/roomlist/index.js';
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RoomList = __webpack_require__(55);
+var _RoomList = __webpack_require__(56);
 
 var _RoomList2 = _interopRequireDefault(_RoomList);
 
@@ -4331,11 +3364,8 @@ exports.default = {
             case 0:
               return _context.abrupt('return', {
                 title: context.params.room,
-                component: _react2.default.createElement(_RoomList2.default, { name: context.params.room, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 12
-                  },
-                  __self: _this
+                component: (0, _jsx3.default)(_RoomList2.default, {
+                  name: context.params.room
                 })
               });
 
@@ -4350,29 +3380,15 @@ exports.default = {
 };
 
 /***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)();
-// imports
-
-
-// module
-exports.push([module.i, "/* @import '~bootstrap/scss/bootstrap.scss'; */\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #27232F;\n  color: #fff; }\n\n.header {\n  font-family: 'Asap', sans-serif;\n  background: #15131A;\n  padding: 20px 0 40px; }\n  .header .title {\n    display: block;\n    text-align: center;\n    color: #fff;\n    font-size: 20px;\n    font-weight: 700;\n    margin: 0 auto;\n    text-transform: uppercase; }\n    @media screen and (min-width: 768px) {\n      .header .title {\n        text-align: left;\n        font-size: 36px;\n        margin-top: 20px;\n        margin-left: 50px; } }\n", "", {"version":3,"sources":["/./components/Header/Header.css"],"names":[],"mappings":"AAAA,+CAA+C;AAC/C;EACE,UAAU;EACV,WAAW;EACX,aAAa;EACb,iCAAiC;EACjC,iBAAiB;EACjB,oBAAoB;EACpB,YAAY,EAAE;;AAEhB;EACE,gCAAgC;EAChC,oBAAoB;EACpB,qBAAqB,EAAE;EACvB;IACE,eAAe;IACf,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;IACf,0BAA0B,EAAE;IAC5B;MACE;QACE,iBAAiB;QACjB,gBAAgB;QAChB,iBAAiB;QACjB,kBAAkB,EAAE,EAAE","file":"Header.css","sourcesContent":["/* @import '~bootstrap/scss/bootstrap.scss'; */\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #27232F;\n  color: #fff; }\n\n.header {\n  font-family: 'Asap', sans-serif;\n  background: #15131A;\n  padding: 20px 0 40px; }\n  .header .title {\n    display: block;\n    text-align: center;\n    color: #fff;\n    font-size: 20px;\n    font-weight: 700;\n    margin: 0 auto;\n    text-transform: uppercase; }\n    @media screen and (min-width: 768px) {\n      .header .title {\n        text-align: left;\n        font-size: 36px;\n        margin-top: 20px;\n        margin-left: 50px; } }\n"],"sourceRoot":"webpack://"}]);
-
-// exports
-
-
-/***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
 
 
 // module
-exports.push([module.i, "*,\n*::after,\n*::before {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #1e1e2f;\n  color: #fff; }\n\na {\n  text-decoration: none;\n  color: #fff; }\n\n.site {\n  margin: 0; }\n  .site ul {\n    list-style: none;\n    padding: 0; }\n", "", {"version":3,"sources":["/./components/Layout/Layout.css"],"names":[],"mappings":"AAAA;;;EAGE,uBAAuB;EACvB,oCAAoC;EACpC,mCAAmC,EAAE;;AAEvC;;EAEE,UAAU;EACV,WAAW;EACX,aAAa;EACb,iCAAiC;EACjC,iBAAiB;EACjB,oBAAoB;EACpB,YAAY,EAAE;;AAEhB;EACE,sBAAsB;EACtB,YAAY,EAAE;;AAEhB;EACE,UAAU,EAAE;EACZ;IACE,iBAAiB;IACjB,WAAW,EAAE","file":"Layout.css","sourcesContent":["*,\n*::after,\n*::before {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #1e1e2f;\n  color: #fff; }\n\na {\n  text-decoration: none;\n  color: #fff; }\n\n.site {\n  margin: 0; }\n  .site ul {\n    list-style: none;\n    padding: 0; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "/* @import '~bootstrap/scss/bootstrap.scss'; */\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #27232F;\n  color: #fff; }\n\n.header {\n  font-family: 'Asap', sans-serif;\n  background: #15131A;\n  padding: 20px 0 40px; }\n  .header .title {\n    display: block;\n    text-align: center;\n    color: #fff;\n    font-size: 20px;\n    font-weight: 700;\n    margin: 0 auto;\n    text-transform: uppercase; }\n    @media screen and (min-width: 768px) {\n      .header .title {\n        text-align: left;\n        font-size: 36px;\n        margin-top: 20px;\n        margin-left: 50px; } }\n", ""]);
 
 // exports
 
@@ -4381,12 +3397,12 @@ exports.push([module.i, "*,\n*::after,\n*::before {\n  box-sizing: border-box;\n
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+
 
 // module
-exports.push([module.i, ".now-playing {\n  border-radius: 3px;\n  padding: 15px 15px;\n  width: 90%;\n  margin: 20px auto;\n  background: #3B3546;\n  white-space: nowrap;\n  position: fixed;\n  bottom: -5px;\n  left: 0;\n  right: 0;\n  height: 70px; }\n  @media screen and (min-width: 768px) {\n    .now-playing {\n      position: absolute;\n      top: 120px;\n      right: 0;\n      left: auto;\n      bottom: auto;\n      margin: 20px 50px;\n      width: 22%;\n      height: 350px; } }\n  .now-playing h3 {\n    margin: 5px 0 20px; }\n  .now-playing .artwork {\n    width: 44px;\n    margin: 0px 10px 10px 0;\n    display: inline-block;\n    vertical-align: top; }\n    @media screen and (min-width: 768px) {\n      .now-playing .artwork {\n        width: 200px;\n        display: block;\n        margin: 35px auto 0; } }\n  .now-playing .info {\n    display: inline-block;\n    vertical-align: top;\n    font-size: 14px;\n    position: relative;\n    width: 90%; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info {\n        display: block;\n        margin: 10px 25px;\n        position: static; } }\n    .now-playing .info .currently {\n      text-transform: uppercase;\n      font-size: 12px;\n      margin: 5px 0; }\n      @media screen and (min-width: 768px) {\n        .now-playing .info .currently {\n          position: absolute;\n          top: 20px;\n          left: 20px;\n          font-size: 14px; } }\n    .now-playing .info .name {\n      font-weight: 700;\n      margin-right: 7px; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info .artist {\n        display: block; } }\n  .now-playing .song {\n    width: 80%;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  .now-playing .rating {\n    position: absolute;\n    float: right;\n    top: 14px;\n    right: 14px;\n    z-index: 99999999; }\n    @media screen and (min-width: 768px) {\n      .now-playing .rating {\n        float: left;\n        top: auto;\n        right: auto;\n        bottom: 12px;\n        left: 40px; } }\n    .now-playing .rating .material-icons {\n      font-size: 18px;\n      margin: 0 1px; }\n  .now-playing .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer;\n    margin-left: 180px; }\n    .now-playing .vote i {\n      width: 30px; }\n    .now-playing .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      position: relative;\n      top: 3px;\n      bottom: 24px; }\n", "", {"version":3,"sources":["/./components/NowPlaying/NowPlaying.css"],"names":[],"mappings":"AACA;EACE,mBAAmB;EACnB,mBAAmB;EACnB,WAAW;EACX,kBAAkB;EAClB,oBAAoB;EACpB,oBAAoB;EACpB,gBAAgB;EAChB,aAAa;EACb,QAAQ;EACR,SAAS;EACT,aAAa,EAAE;EACf;IACE;MACE,mBAAmB;MACnB,WAAW;MACX,SAAS;MACT,WAAW;MACX,aAAa;MACb,kBAAkB;MAClB,WAAW;MACX,cAAc,EAAE,EAAE;EACtB;IACE,mBAAmB,EAAE;EACvB;IACE,YAAY;IACZ,wBAAwB;IACxB,sBAAsB;IACtB,oBAAoB,EAAE;IACtB;MACE;QACE,aAAa;QACb,eAAe;QACf,oBAAoB,EAAE,EAAE;EAC9B;IACE,sBAAsB;IACtB,oBAAoB;IACpB,gBAAgB;IAChB,mBAAmB;IACnB,WAAW,EAAE;IACb;MACE;QACE,eAAe;QACf,kBAAkB;QAClB,iBAAiB,EAAE,EAAE;IACzB;MACE,0BAA0B;MAC1B,gBAAgB;MAChB,cAAc,EAAE;MAChB;QACE;UACE,mBAAmB;UACnB,UAAU;UACV,WAAW;UACX,gBAAgB,EAAE,EAAE;IAC1B;MACE,iBAAiB;MACjB,kBAAkB,EAAE;IACtB;MACE;QACE,eAAe,EAAE,EAAE;EACzB;IACE,WAAW;IACX,iBAAiB;IACjB,wBAAwB,EAAE;EAC5B;IACE,mBAAmB;IACnB,aAAa;IACb,UAAU;IACV,YAAY;IACZ,kBAAkB,EAAE;IACpB;MACE;QACE,YAAY;QACZ,UAAU;QACV,YAAY;QACZ,aAAa;QACb,WAAW,EAAE,EAAE;IACnB;MACE,gBAAgB;MAChB,cAAc,EAAE;EACpB;IACE,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,mBAAmB,EAAE;IACrB;MACE,YAAY,EAAE;IAChB;MACE,oBAAoB;MACpB,gBAAgB;MAChB,iBAAiB;MACjB,mBAAmB;MACnB,SAAS;MACT,aAAa,EAAE","file":"NowPlaying.css","sourcesContent":["@import url(../variables.css);\n.now-playing {\n  border-radius: 3px;\n  padding: 15px 15px;\n  width: 90%;\n  margin: 20px auto;\n  background: #3B3546;\n  white-space: nowrap;\n  position: fixed;\n  bottom: -5px;\n  left: 0;\n  right: 0;\n  height: 70px; }\n  @media screen and (min-width: 768px) {\n    .now-playing {\n      position: absolute;\n      top: 120px;\n      right: 0;\n      left: auto;\n      bottom: auto;\n      margin: 20px 50px;\n      width: 22%;\n      height: 350px; } }\n  .now-playing h3 {\n    margin: 5px 0 20px; }\n  .now-playing .artwork {\n    width: 44px;\n    margin: 0px 10px 10px 0;\n    display: inline-block;\n    vertical-align: top; }\n    @media screen and (min-width: 768px) {\n      .now-playing .artwork {\n        width: 200px;\n        display: block;\n        margin: 35px auto 0; } }\n  .now-playing .info {\n    display: inline-block;\n    vertical-align: top;\n    font-size: 14px;\n    position: relative;\n    width: 90%; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info {\n        display: block;\n        margin: 10px 25px;\n        position: static; } }\n    .now-playing .info .currently {\n      text-transform: uppercase;\n      font-size: 12px;\n      margin: 5px 0; }\n      @media screen and (min-width: 768px) {\n        .now-playing .info .currently {\n          position: absolute;\n          top: 20px;\n          left: 20px;\n          font-size: 14px; } }\n    .now-playing .info .name {\n      font-weight: 700;\n      margin-right: 7px; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info .artist {\n        display: block; } }\n  .now-playing .song {\n    width: 80%;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  .now-playing .rating {\n    position: absolute;\n    float: right;\n    top: 14px;\n    right: 14px;\n    z-index: 99999999; }\n    @media screen and (min-width: 768px) {\n      .now-playing .rating {\n        float: left;\n        top: auto;\n        right: auto;\n        bottom: 12px;\n        left: 40px; } }\n    .now-playing .rating .material-icons {\n      font-size: 18px;\n      margin: 0 1px; }\n  .now-playing .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer;\n    margin-left: 180px; }\n    .now-playing .vote i {\n      width: 30px; }\n    .now-playing .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      position: relative;\n      top: 3px;\n      bottom: 24px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "*,\n*::after,\n*::before {\n  box-sizing: border-box;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  font-family: 'Rubik', sans-serif;\n  font-weight: 400;\n  background: #1e1e2f;\n  color: #fff; }\n\na {\n  text-decoration: none;\n  color: #fff; }\n\n.site {\n  margin: 0; }\n  .site ul {\n    list-style: none;\n    padding: 0; }\n", ""]);
 
 // exports
 
@@ -4395,12 +3411,12 @@ exports.push([module.i, ".now-playing {\n  border-radius: 3px;\n  padding: 15px 
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, ".rating {\n  position: absolute;\n  float: right;\n  top: 14px;\n  right: 14px; }\n  .rating .material-icons.heart {\n    font-size: 18px;\n    width: 18px;\n    margin: 0 1px; }\n", "", {"version":3,"sources":["/./components/NowPlayingRating/NowPlayingRating.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,aAAa;EACb,UAAU;EACV,YAAY,EAAE;EACd;IACE,gBAAgB;IAChB,YAAY;IACZ,cAAc,EAAE","file":"NowPlayingRating.css","sourcesContent":[".rating {\n  position: absolute;\n  float: right;\n  top: 14px;\n  right: 14px; }\n  .rating .material-icons.heart {\n    font-size: 18px;\n    width: 18px;\n    margin: 0 1px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".now-playing {\n  border-radius: 3px;\n  padding: 15px 15px;\n  width: 90%;\n  margin: 20px auto;\n  background: #3B3546;\n  white-space: nowrap;\n  position: fixed;\n  bottom: -5px;\n  left: 0;\n  right: 0;\n  height: 70px; }\n  @media screen and (min-width: 768px) {\n    .now-playing {\n      position: absolute;\n      top: 120px;\n      right: 0;\n      left: auto;\n      bottom: auto;\n      margin: 20px 50px;\n      width: 22%;\n      height: 350px; } }\n  .now-playing h3 {\n    margin: 5px 0 20px; }\n  .now-playing .artwork {\n    width: 44px;\n    margin: 0px 10px 10px 0;\n    display: inline-block;\n    vertical-align: top; }\n    @media screen and (min-width: 768px) {\n      .now-playing .artwork {\n        width: 200px;\n        display: block;\n        margin: 35px auto 0; } }\n  .now-playing .info {\n    display: inline-block;\n    vertical-align: top;\n    font-size: 14px;\n    position: relative;\n    width: 90%; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info {\n        display: block;\n        margin: 10px 25px;\n        position: static; } }\n    .now-playing .info .currently {\n      text-transform: uppercase;\n      font-size: 12px;\n      margin: 5px 0; }\n      @media screen and (min-width: 768px) {\n        .now-playing .info .currently {\n          position: absolute;\n          top: 20px;\n          left: 20px;\n          font-size: 14px; } }\n    .now-playing .info .name {\n      font-weight: 700;\n      margin-right: 7px; }\n    @media screen and (min-width: 768px) {\n      .now-playing .info .artist {\n        display: block; } }\n  .now-playing .song {\n    width: 80%;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  .now-playing .rating {\n    position: absolute;\n    float: right;\n    top: 14px;\n    right: 14px;\n    z-index: 99999999; }\n    @media screen and (min-width: 768px) {\n      .now-playing .rating {\n        float: left;\n        top: auto;\n        right: auto;\n        bottom: 12px;\n        left: 40px; } }\n    .now-playing .rating .material-icons {\n      font-size: 18px;\n      margin: 0 1px; }\n  .now-playing .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer;\n    margin-left: 180px; }\n    .now-playing .vote i {\n      width: 30px; }\n    .now-playing .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      position: relative;\n      top: 3px;\n      bottom: 24px; }\n", ""]);
 
 // exports
 
@@ -4409,12 +3425,12 @@ exports.push([module.i, ".rating {\n  position: absolute;\n  float: right;\n  to
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+
 
 // module
-exports.push([module.i, ".list-container {\n  /* width: 100%; */ }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 0 auto; } }\n\ntr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    tr .vote .material-icons {\n      display: inline-block;\n      width: 30px; }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px; }\n", "", {"version":3,"sources":["/./components/PlayedSong/PlayedSong.css"],"names":[],"mappings":"AACA;EACE,kBAAkB,EAAE;EACpB;IACE;MACE,WAAW;MACX,eAAe,EAAE,EAAE;;AAEzB;EACE,aAAa;EACb,8BAA8B,EAAE;EAChC;IACE,YAAY;IACZ,mBAAmB;IACnB,WAAW;IACX,eAAe,EAAE;EACnB;IACE,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,wBAAwB,EAAE;EAC5B;IACE,iBAAiB,EAAE;EACrB;IACE,YAAY;IACZ,mBAAmB;IACnB,gBAAgB,EAAE;IAClB;MACE,sBAAsB;MACtB,YAAY,EAAE;IAChB;MACE,oBAAoB;MACpB,gBAAgB;MAChB,iBAAiB,EAAE","file":"PlayedSong.css","sourcesContent":["@import url(../variables.css);\n.list-container {\n  /* width: 100%; */ }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 0 auto; } }\n\ntr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    tr .vote .material-icons {\n      display: inline-block;\n      width: 30px; }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".rating {\n  position: absolute;\n  float: right;\n  top: 14px;\n  right: 14px; }\n  .rating .material-icons.heart {\n    font-size: 18px;\n    width: 18px;\n    margin: 0 1px; }\n", ""]);
 
 // exports
 
@@ -4423,12 +3439,12 @@ exports.push([module.i, ".list-container {\n  /* width: 100%; */ }\n  @media scr
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: 0; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border-color: #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0;\n    overflow-x: hidden; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n", "", {"version":3,"sources":["/./components/Playlist/Playlist.css"],"names":[],"mappings":"AACA;EACE,WAAW;EACX,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,OAAO,EAAE;EACT;IACE;MACE,WAAW;MACX,kBAAkB,EAAE,EAAE;EAC1B;IACE,0BAA0B;IAC1B,gBAAgB,EAAE;EACpB;IACE,sBAAsB,EAAE;EAC1B;IACE,mBAAmB;IACnB,cAAc;IACd,WAAW;IACX,mBAAmB,EAAE;IACrB;MACE;QACE,cAAc,EAAE,EAAE;IACtB;MACE,0BAA0B;MAC1B,YAAY;MACZ,oBAAoB,EAAE;MACtB;QACE,eAAe;QACf,0BAA0B,EAAE","file":"Playlist.css","sourcesContent":["@import url(../variables.css);\n.list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: 0; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border-color: #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0;\n    overflow-x: hidden; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".list-container {\n  /* width: 100%; */ }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 0 auto; } }\n\ntr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    tr .vote .material-icons {\n      display: inline-block;\n      width: 30px; }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px; }\n", ""]);
 
 // exports
 
@@ -4437,12 +3453,12 @@ exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, ".search-box {\n  position: relative;\n  top: -30px; }\n  @media screen and (min-width: 768px) {\n    .search-box {\n      display: none; } }\n  .search-box .search-bar {\n    width: 90%;\n    margin: 10px auto 0; }\n    .search-box .search-bar .placeholder {\n      position: relative; }\n    .search-box .search-bar .search, .search-box .search-bar .cancel {\n      position: absolute;\n      top: 7px;\n      left: 7px;\n      color: #bbb; }\n    .search-box .search-bar .cancel {\n      left: auto;\n      right: 7px;\n      display: none; }\n    .search-box .search-bar input:focus + .cancel {\n      display: block; }\n    .search-box .search-bar input {\n      border: none;\n      margin: 0 auto;\n      width: 100%;\n      height: 40px;\n      border-radius: 10px;\n      font-size: 16px;\n      padding: 10px;\n      padding-left: 40px;\n      background: #E8E4EF; }\n", "", {"version":3,"sources":["/./components/SearchBox/SearchBox.css"],"names":[],"mappings":"AACA;EACE,mBAAmB;EACnB,WAAW,EAAE;EACb;IACE;MACE,cAAc,EAAE,EAAE;EACtB;IACE,WAAW;IACX,oBAAoB,EAAE;IACtB;MACE,mBAAmB,EAAE;IACvB;MACE,mBAAmB;MACnB,SAAS;MACT,UAAU;MACV,YAAY,EAAE;IAChB;MACE,WAAW;MACX,WAAW;MACX,cAAc,EAAE;IAClB;MACE,eAAe,EAAE;IACnB;MACE,aAAa;MACb,eAAe;MACf,YAAY;MACZ,aAAa;MACb,oBAAoB;MACpB,gBAAgB;MAChB,cAAc;MACd,mBAAmB;MACnB,oBAAoB,EAAE","file":"SearchBox.css","sourcesContent":["@import url(../variables.css);\n.search-box {\n  position: relative;\n  top: -30px; }\n  @media screen and (min-width: 768px) {\n    .search-box {\n      display: none; } }\n  .search-box .search-bar {\n    width: 90%;\n    margin: 10px auto 0; }\n    .search-box .search-bar .placeholder {\n      position: relative; }\n    .search-box .search-bar .search, .search-box .search-bar .cancel {\n      position: absolute;\n      top: 7px;\n      left: 7px;\n      color: #bbb; }\n    .search-box .search-bar .cancel {\n      left: auto;\n      right: 7px;\n      display: none; }\n    .search-box .search-bar input:focus + .cancel {\n      display: block; }\n    .search-box .search-bar input {\n      border: none;\n      margin: 0 auto;\n      width: 100%;\n      height: 40px;\n      border-radius: 10px;\n      font-size: 16px;\n      padding: 10px;\n      padding-left: 40px;\n      background: #E8E4EF; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: 0; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border-color: #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0;\n    overflow-x: hidden; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n", ""]);
 
 // exports
 
@@ -4451,12 +3467,12 @@ exports.push([module.i, ".search-box {\n  position: relative;\n  top: -30px; }\n
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, ".search-results {\n  width: 90%;\n  margin: 0 auto;\n  background: #E8E4EF;\n  color: #A8A2B2;\n  z-index: 5;\n  position: absolute;\n  left: 0;\n  right: 0;\n  border-radius: 10px; }\n  .search-results .search-results-tracks {\n    padding: 0; }\n    .search-results .search-results-tracks ul {\n      list-style: none;\n      padding: 0; }\n    .search-results .search-results-tracks li {\n      cursor: pointer;\n      padding: 10px 40px;\n      border-bottom: 1px solid #B8ACCB; }\n      .search-results .search-results-tracks li:last-of-type {\n        border: none; }\n      .search-results .search-results-tracks li .track-name {\n        display: block;\n        font-weight: 500;\n        color: #3B3546;\n        line-height: 18px; }\n      .search-results .search-results-tracks li .track-artist-name {\n        display: block;\n        font-size: 14px; }\n", "", {"version":3,"sources":["/./components/SearchResults/SearchResults.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,eAAe;EACf,oBAAoB;EACpB,eAAe;EACf,WAAW;EACX,mBAAmB;EACnB,QAAQ;EACR,SAAS;EACT,oBAAoB,EAAE;EACtB;IACE,WAAW,EAAE;IACb;MACE,iBAAiB;MACjB,WAAW,EAAE;IACf;MACE,gBAAgB;MAChB,mBAAmB;MACnB,iCAAiC,EAAE;MACnC;QACE,aAAa,EAAE;MACjB;QACE,eAAe;QACf,iBAAiB;QACjB,eAAe;QACf,kBAAkB,EAAE;MACtB;QACE,eAAe;QACf,gBAAgB,EAAE","file":"SearchResults.css","sourcesContent":[".search-results {\n  width: 90%;\n  margin: 0 auto;\n  background: #E8E4EF;\n  color: #A8A2B2;\n  z-index: 5;\n  position: absolute;\n  left: 0;\n  right: 0;\n  border-radius: 10px; }\n  .search-results .search-results-tracks {\n    padding: 0; }\n    .search-results .search-results-tracks ul {\n      list-style: none;\n      padding: 0; }\n    .search-results .search-results-tracks li {\n      cursor: pointer;\n      padding: 10px 40px;\n      border-bottom: 1px solid #B8ACCB; }\n      .search-results .search-results-tracks li:last-of-type {\n        border: none; }\n      .search-results .search-results-tracks li .track-name {\n        display: block;\n        font-weight: 500;\n        color: #3B3546;\n        line-height: 18px; }\n      .search-results .search-results-tracks li .track-artist-name {\n        display: block;\n        font-size: 14px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".search-box {\n  position: relative;\n  top: -30px; }\n  @media screen and (min-width: 768px) {\n    .search-box {\n      display: none; } }\n  .search-box .search-bar {\n    width: 90%;\n    margin: 10px auto 0; }\n    .search-box .search-bar .placeholder {\n      position: relative; }\n    .search-box .search-bar .search, .search-box .search-bar .cancel {\n      position: absolute;\n      top: 7px;\n      left: 7px;\n      color: #bbb; }\n    .search-box .search-bar .cancel {\n      left: auto;\n      right: 7px;\n      display: none; }\n    .search-box .search-bar input:focus + .cancel {\n      display: block; }\n    .search-box .search-bar input {\n      border: none;\n      margin: 0 auto;\n      width: 100%;\n      height: 40px;\n      border-radius: 10px;\n      font-size: 16px;\n      padding: 10px;\n      padding-left: 40px;\n      background: #E8E4EF; }\n", ""]);
 
 // exports
 
@@ -4465,12 +3481,12 @@ exports.push([module.i, ".search-results {\n  width: 90%;\n  margin: 0 auto;\n  
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+
 
 // module
-exports.push([module.i, "tr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    @media screen and (min-width: 768px) {\n      tr .vote {\n        width: 100px; } }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      display: inline-block;\n      width: 20px; }\n      @media screen and (min-width: 768px) {\n        tr .vote .upvotes {\n          margin-right: 20px; } }\n", "", {"version":3,"sources":["/./components/Song/Song.css"],"names":[],"mappings":"AACA;EACE,aAAa;EACb,8BAA8B,EAAE;EAChC;IACE,YAAY;IACZ,mBAAmB;IACnB,WAAW;IACX,eAAe,EAAE;EACnB;IACE,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,wBAAwB,EAAE;EAC5B;IACE,iBAAiB,EAAE;EACrB;IACE,YAAY;IACZ,mBAAmB;IACnB,gBAAgB,EAAE;IAClB;MACE;QACE,aAAa,EAAE,EAAE;IACrB;MACE,oBAAoB;MACpB,gBAAgB;MAChB,iBAAiB;MACjB,sBAAsB;MACtB,YAAY,EAAE;MACd;QACE;UACE,mBAAmB,EAAE,EAAE","file":"Song.css","sourcesContent":["@import url(../variables.css);\ntr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    @media screen and (min-width: 768px) {\n      tr .vote {\n        width: 100px; } }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      display: inline-block;\n      width: 20px; }\n      @media screen and (min-width: 768px) {\n        tr .vote .upvotes {\n          margin-right: 20px; } }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".search-results {\n  width: 90%;\n  margin: 0 auto;\n  background: #E8E4EF;\n  color: #A8A2B2;\n  z-index: 5;\n  position: absolute;\n  left: 0;\n  right: 0;\n  border-radius: 10px; }\n  .search-results .search-results-tracks {\n    padding: 0; }\n    .search-results .search-results-tracks ul {\n      list-style: none;\n      padding: 0; }\n    .search-results .search-results-tracks li {\n      cursor: pointer;\n      padding: 10px 40px;\n      border-bottom: 1px solid #B8ACCB; }\n      .search-results .search-results-tracks li:last-of-type {\n        border: none; }\n      .search-results .search-results-tracks li .track-name {\n        display: block;\n        font-weight: 500;\n        color: #3B3546;\n        line-height: 18px; }\n      .search-results .search-results-tracks li .track-artist-name {\n        display: block;\n        font-size: 14px; }\n", ""]);
 
 // exports
 
@@ -4479,12 +3495,12 @@ exports.push([module.i, "tr {\n  height: 70px;\n  counter-increment: my_counter;
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: -15px; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border: 1px solid #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n", "", {"version":3,"sources":["/./components/SongList/SongList.css"],"names":[],"mappings":"AACA;EACE,WAAW;EACX,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,WAAW,EAAE;EACb;IACE;MACE,WAAW;MACX,kBAAkB,EAAE,EAAE;EAC1B;IACE,0BAA0B;IAC1B,gBAAgB,EAAE;EACpB;IACE,0BAA0B,EAAE;EAC9B;IACE,mBAAmB;IACnB,cAAc;IACd,WAAW,EAAE;IACb;MACE;QACE,cAAc,EAAE,EAAE;IACtB;MACE,0BAA0B;MAC1B,YAAY;MACZ,oBAAoB,EAAE;MACtB;QACE,eAAe;QACf,0BAA0B,EAAE","file":"SongList.css","sourcesContent":["@import url(../variables.css);\n.list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: -15px; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border: 1px solid #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "tr {\n  height: 70px;\n  counter-increment: my_counter; }\n  tr .ranking {\n    width: 30px;\n    position: relative;\n    top: -12px;\n    color: #a8a2b2; }\n  tr .name-artist span {\n    display: block;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis; }\n  tr .name-artist .name {\n    font-weight: 700; }\n  tr .vote {\n    width: 60px;\n    padding-left: 10px;\n    cursor: pointer; }\n    @media screen and (min-width: 768px) {\n      tr .vote {\n        width: 100px; } }\n    tr .vote .upvotes {\n      vertical-align: top;\n      margin-top: 3px;\n      margin-left: 5px;\n      display: inline-block;\n      width: 20px; }\n      @media screen and (min-width: 768px) {\n        tr .vote .upvotes {\n          margin-right: 20px; } }\n", ""]);
 
 // exports
 
@@ -4493,12 +3509,12 @@ exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-
+exports.i(__webpack_require__(12), "");
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n* {\n  line-height: 1.2;\n  margin: 0; }\n\nhtml {\n  color: #888;\n  display: table;\n  font-family: sans-serif;\n  height: 100%;\n  text-align: center;\n  width: 100%; }\n\nbody {\n  display: table-cell;\n  vertical-align: middle;\n  padding: 2em; }\n\nh1 {\n  color: #555;\n  font-size: 2em;\n  font-weight: 400; }\n\np {\n  margin: 0 auto;\n  width: 280px; }\n\npre {\n  text-align: left;\n  margin-top: 2rem; }\n\n@media only screen and (max-width: 280px) {\n  body,\n  p {\n    width: 95%; }\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em; } }\n", "", {"version":3,"sources":["/./routes/error/ErrorPage.css"],"names":[],"mappings":"AAAA,iBAAiB;AACjB;;;;;;;GAOG;AACH;EACE,iBAAiB;EACjB,UAAU,EAAE;;AAEd;EACE,YAAY;EACZ,eAAe;EACf,wBAAwB;EACxB,aAAa;EACb,mBAAmB;EACnB,YAAY,EAAE;;AAEhB;EACE,oBAAoB;EACpB,uBAAuB;EACvB,aAAa,EAAE;;AAEjB;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB,EAAE;;AAErB;EACE,eAAe;EACf,aAAa,EAAE;;AAEjB;EACE,iBAAiB;EACjB,iBAAiB,EAAE;;AAErB;EACE;;IAEE,WAAW,EAAE;EACf;IACE,iBAAiB;IACjB,kBAAkB,EAAE,EAAE","file":"ErrorPage.css","sourcesContent":["@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n* {\n  line-height: 1.2;\n  margin: 0; }\n\nhtml {\n  color: #888;\n  display: table;\n  font-family: sans-serif;\n  height: 100%;\n  text-align: center;\n  width: 100%; }\n\nbody {\n  display: table-cell;\n  vertical-align: middle;\n  padding: 2em; }\n\nh1 {\n  color: #555;\n  font-size: 2em;\n  font-weight: 400; }\n\np {\n  margin: 0 auto;\n  width: 280px; }\n\npre {\n  text-align: left;\n  margin-top: 2rem; }\n\n@media only screen and (max-width: 280px) {\n  body,\n  p {\n    width: 95%; }\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em; } }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".list-container {\n  width: 90%;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  top: -15px; }\n  @media screen and (min-width: 768px) {\n    .list-container {\n      width: 60%;\n      margin: 20px 50px; } }\n  .list-container h3 {\n    text-transform: uppercase;\n    font-size: 16px; }\n  .list-container hr {\n    border: 1px solid #3B3546; }\n  .list-container .container {\n    overflow-y: scroll;\n    height: 380px;\n    padding: 0; }\n    @media screen and (min-width: 768px) {\n      .list-container .container {\n        height: 450px; } }\n    .list-container .container table {\n      border-collapse: collapse;\n      width: 100%;\n      table-layout: fixed; }\n      .list-container .container table tbody {\n        overflow: auto;\n        counter-reset: my_counter; }\n", ""]);
 
 // exports
 
@@ -4507,12 +3523,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
 
 
 // module
-exports.push([module.i, ".copy {\n  margin: 30px 30px 50px;\n  font-family: 'Asap', sans-serif; }\n  .copy .title {\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 24px; }\n  .copy .desc {\n    line-height: 24px;\n    color: #A8A2B2; }\n\n.button-container {\n  margin: 30px;\n  font-family: 'Asap', sans-serif; }\n  .button-container .input-container {\n    margin-bottom: 20px;\n    display: none; }\n    .button-container .input-container input {\n      color: #fff;\n      background: transparent;\n      border: none;\n      border-bottom: 2px solid #A8A2B2;\n      height: 40px;\n      width: 250px;\n      font-size: 20px; }\n  .button-container .caption {\n    display: block;\n    margin-bottom: 15px;\n    color: #A8A2B2; }\n    .button-container .caption .cap2 {\n      display: none; }\n  .button-container .join, .button-container .create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    border: 2px solid #fff;\n    padding: 15px 20px;\n    text-transform: uppercase;\n    text-align: center;\n    font-size: 20px; }\n  .button-container .overlay-join, .button-container .overlay-create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    position: absolute; }\n", "", {"version":3,"sources":["/./routes/home/Home.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,gCAAgC,EAAE;EAClC;IACE,0BAA0B;IAC1B,iBAAiB;IACjB,gBAAgB,EAAE;EACpB;IACE,kBAAkB;IAClB,eAAe,EAAE;;AAErB;EACE,aAAa;EACb,gCAAgC,EAAE;EAClC;IACE,oBAAoB;IACpB,cAAc,EAAE;IAChB;MACE,YAAY;MACZ,wBAAwB;MACxB,aAAa;MACb,iCAAiC;MACjC,aAAa;MACb,aAAa;MACb,gBAAgB,EAAE;EACtB;IACE,eAAe;IACf,oBAAoB;IACpB,eAAe,EAAE;IACjB;MACE,cAAc,EAAE;EACpB;IACE,eAAe;IACf,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,0BAA0B;IAC1B,mBAAmB;IACnB,gBAAgB,EAAE;EACpB;IACE,eAAe;IACf,aAAa;IACb,aAAa;IACb,mBAAmB,EAAE","file":"Home.css","sourcesContent":[".copy {\n  margin: 30px 30px 50px;\n  font-family: 'Asap', sans-serif; }\n  .copy .title {\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 24px; }\n  .copy .desc {\n    line-height: 24px;\n    color: #A8A2B2; }\n\n.button-container {\n  margin: 30px;\n  font-family: 'Asap', sans-serif; }\n  .button-container .input-container {\n    margin-bottom: 20px;\n    display: none; }\n    .button-container .input-container input {\n      color: #fff;\n      background: transparent;\n      border: none;\n      border-bottom: 2px solid #A8A2B2;\n      height: 40px;\n      width: 250px;\n      font-size: 20px; }\n  .button-container .caption {\n    display: block;\n    margin-bottom: 15px;\n    color: #A8A2B2; }\n    .button-container .caption .cap2 {\n      display: none; }\n  .button-container .join, .button-container .create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    border: 2px solid #fff;\n    padding: 15px 20px;\n    text-transform: uppercase;\n    text-align: center;\n    font-size: 20px; }\n  .button-container .overlay-join, .button-container .overlay-create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    position: absolute; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n* {\n  line-height: 1.2;\n  margin: 0; }\n\nhtml {\n  color: #888;\n  display: table;\n  font-family: sans-serif;\n  height: 100%;\n  text-align: center;\n  width: 100%; }\n\nbody {\n  display: table-cell;\n  vertical-align: middle;\n  padding: 2em; }\n\nh1 {\n  color: #555;\n  font-size: 2em;\n  font-weight: 400; }\n\np {\n  margin: 0 auto;\n  width: 280px; }\n\npre {\n  text-align: left;\n  margin-top: 2rem; }\n\n@media only screen and (max-width: 280px) {\n  body,\n  p {\n    width: 95%; }\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em; } }\n", ""]);
 
 // exports
 
@@ -4521,12 +3537,12 @@ exports.push([module.i, ".copy {\n  margin: 30px 30px 50px;\n  font-family: 'Asa
 /* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)();
+exports = module.exports = __webpack_require__(7)();
 // imports
-exports.i(__webpack_require__(11), "");
+
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n.root {\n  padding-left: 20px;\n  padding-right: 20px; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: var(--max-content-width); }\n", "", {"version":3,"sources":["/./routes/notFound/NotFound.css"],"names":[],"mappings":"AAAA,iBAAiB;AACjB;;;;;;;GAOG;AAEH;EACE,mBAAmB;EACnB,oBAAoB,EAAE;;AAExB;EACE,eAAe;EACf,kBAAkB;EAClB,oCAAoC,EAAE","file":"NotFound.css","sourcesContent":["@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n@import url(../../components/variables.css);\n.root {\n  padding-left: 20px;\n  padding-right: 20px; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: var(--max-content-width); }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".copy {\n  margin: 30px 30px 50px;\n  font-family: 'Asap', sans-serif; }\n  .copy .title {\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 24px; }\n  .copy .desc {\n    line-height: 24px;\n    color: #A8A2B2; }\n\n.button-container {\n  margin: 30px;\n  font-family: 'Asap', sans-serif; }\n  .button-container .input-container {\n    margin-bottom: 20px;\n    display: none; }\n    .button-container .input-container input {\n      color: #fff;\n      background: transparent;\n      border: none;\n      border-bottom: 2px solid #A8A2B2;\n      height: 40px;\n      width: 250px;\n      font-size: 20px; }\n  .button-container .caption {\n    display: block;\n    margin-bottom: 15px;\n    color: #A8A2B2; }\n    .button-container .caption .cap2 {\n      display: none; }\n  .button-container .join, .button-container .create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    border: 2px solid #fff;\n    padding: 15px 20px;\n    text-transform: uppercase;\n    text-align: center;\n    font-size: 20px; }\n  .button-container .overlay-join, .button-container .overlay-create {\n    display: block;\n    width: 250px;\n    height: 57px;\n    position: absolute; }\n", ""]);
 
 // exports
 
@@ -4535,9 +3551,23 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
 /* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(7)();
+// imports
+exports.i(__webpack_require__(12), "");
 
-    var content = __webpack_require__(57);
-    var insertCss = __webpack_require__(8);
+// module
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n.root {\n  padding-left: 20px;\n  padding-right: 20px; }\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: var(--max-content-width); }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var content = __webpack_require__(58);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4567,12 +3597,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(58);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(59);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4602,12 +3632,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(59);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(60);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4637,12 +3667,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(60);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(61);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4672,12 +3702,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(61);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(62);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4707,12 +3737,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(62);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(63);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4742,12 +3772,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(63);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(64);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4777,12 +3807,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(64);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(65);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4812,12 +3842,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(65);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(66);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4847,12 +3877,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(66);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(67);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4882,12 +3912,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(68);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(69);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4917,12 +3947,12 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(69);
-    var insertCss = __webpack_require__(8);
+    var content = __webpack_require__(70);
+    var insertCss = __webpack_require__(9);
 
     if (typeof content === 'string') {
       content = [[module.i, content, '']];
@@ -4952,102 +3982,99 @@ exports.push([module.i, "@charset \"UTF-8\";\n/**\n * React Starter Kit (https:/
   
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/core-js/json/stringify");
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/core-js/object/keys");
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-runtime/helpers/slicedToArray");
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports) {
 
 module.exports = require("history/createBrowserHistory");
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports) {
 
 module.exports = require("jquery");
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports) {
 
 module.exports = require("re-base");
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-cookie");
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(32);
+var _typeof2 = __webpack_require__(33);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _regenerator = __webpack_require__(10);
+var _regenerator = __webpack_require__(11);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _toConsumableArray2 = __webpack_require__(31);
+var _toConsumableArray2 = __webpack_require__(32);
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
-var _extends2 = __webpack_require__(17);
+var _jsx2 = __webpack_require__(1);
+
+var _jsx3 = _interopRequireDefault(_jsx2);
+
+var _extends2 = __webpack_require__(18);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _set = __webpack_require__(30);
+var _set = __webpack_require__(31);
 
 var _set2 = _interopRequireDefault(_set);
 
-var _asyncToGenerator2 = __webpack_require__(9);
+var _asyncToGenerator2 = __webpack_require__(10);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
-var _jsxFileName = '/Users/bencampbell/Developement/crowddj-react/src/server.js';
-// import expressJwt from 'express-jwt';
-// import jwt from 'jsonwebtoken';
+__webpack_require__(30);
 
-// import passport from './core/passport';
-// eslint-disable-line import/no-unresolved
-
-__webpack_require__(29);
-
-var _path = __webpack_require__(35);
+var _path = __webpack_require__(36);
 
 var _path2 = _interopRequireDefault(_path);
 
-var _express = __webpack_require__(34);
+var _express = __webpack_require__(35);
 
 var _express2 = _interopRequireDefault(_express);
 
-var _cookieParser = __webpack_require__(33);
+var _cookieParser = __webpack_require__(34);
 
 var _cookieParser2 = _interopRequireDefault(_cookieParser);
 
@@ -5055,41 +4082,41 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _server = __webpack_require__(37);
+var _server = __webpack_require__(38);
 
 var _server2 = _interopRequireDefault(_server);
 
-var _universalRouter = __webpack_require__(38);
+var _universalRouter = __webpack_require__(39);
 
 var _universalRouter2 = _interopRequireDefault(_universalRouter);
 
-var _prettyError = __webpack_require__(36);
+var _prettyError = __webpack_require__(37);
 
 var _prettyError2 = _interopRequireDefault(_prettyError);
 
-var _App = __webpack_require__(24);
+var _App = __webpack_require__(25);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _Html = __webpack_require__(25);
+var _Html = __webpack_require__(26);
 
 var _Html2 = _interopRequireDefault(_Html);
 
-var _ErrorPage = __webpack_require__(26);
+var _ErrorPage = __webpack_require__(27);
 
-var _ErrorPage2 = __webpack_require__(21);
+var _ErrorPage2 = __webpack_require__(22);
 
 var _ErrorPage3 = _interopRequireDefault(_ErrorPage2);
 
-var _routes = __webpack_require__(27);
+var _routes = __webpack_require__(28);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-var _assets = __webpack_require__(28);
+var _assets = __webpack_require__(29);
 
 var _assets2 = _interopRequireDefault(_assets);
 
-var _config = __webpack_require__(20);
+var _config = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5099,6 +4126,12 @@ var app = (0, _express2.default)();
 // Tell any CSS tooling (such as Material UI) to use all vendor prefixes if the
 // user agent is not known.
 // -----------------------------------------------------------------------------
+// eslint-disable-line import/no-unresolved
+
+// import passport from './core/passport';
+
+// import expressJwt from 'express-jwt';
+// import jwt from 'jsonwebtoken';
 global.navigator = global.navigator || {};
 global.navigator.userAgent = global.navigator.userAgent || 'all';
 
@@ -5193,29 +4226,16 @@ app.get('*', function () {
                     case 8:
                       data = (0, _extends3.default)({}, route);
 
-                      data.children = _server2.default.renderToString(_react2.default.createElement(
-                        _App2.default,
-                        { context: context, __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 91
-                          },
-                          __self: undefined
-                        },
-                        route.component
-                      ));
+                      data.children = _server2.default.renderToString((0, _jsx3.default)(_App2.default, {
+                        context: context
+                      }, void 0, route.component));
                       data.style = [].concat((0, _toConsumableArray3.default)(css)).join('');
                       data.scripts = [_assets2.default.vendor.js, _assets2.default.client.js];
                       if (_assets2.default[route.chunk]) {
                         data.scripts.push(_assets2.default[route.chunk].js);
                       }
 
-                      html = _server2.default.renderToStaticMarkup(_react2.default.createElement(_Html2.default, (0, _extends3.default)({}, data, {
-                        __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 101
-                        },
-                        __self: undefined
-                      })));
+                      html = _server2.default.renderToStaticMarkup(_react2.default.createElement(_Html2.default, data));
 
                       res.status(route.status || 200);
                       res.send('<!doctype html>' + html);
@@ -5271,25 +4291,13 @@ pe.skipPackage('express');
 app.use(function (err, req, res, next) {
   // eslint-disable-line no-unused-vars
   console.log(pe.render(err)); // eslint-disable-line no-console
-  var html = _server2.default.renderToStaticMarkup(_react2.default.createElement(
-    _Html2.default,
-    {
-      title: 'Internal Server Error',
-      description: err.message,
-      style: _ErrorPage3.default._getCss() // eslint-disable-line no-underscore-dangle
-      , __source: {
-        fileName: _jsxFileName,
-        lineNumber: 119
-      },
-      __self: undefined
-    },
-    _server2.default.renderToString(_react2.default.createElement(_ErrorPage.ErrorPageWithoutStyle, { error: err, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 124
-      },
-      __self: undefined
-    }))
-  ));
+  var html = _server2.default.renderToStaticMarkup((0, _jsx3.default)(_Html2.default, {
+    title: 'Internal Server Error',
+    description: err.message,
+    style: _ErrorPage3.default._getCss()
+  }, void 0, _server2.default.renderToString((0, _jsx3.default)(_ErrorPage.ErrorPageWithoutStyle, {
+    error: err
+  }))));
   res.status(err.status || 500);
   res.send('<!doctype html>' + html);
 });

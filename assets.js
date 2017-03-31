@@ -1,8 +1,8 @@
 module.exports = {
   "client": {
-    "js": "/assets/client.js"
+    "js": "/assets/client.4c78997b.js"
   },
   "vendor": {
-    "js": "/assets/vendor.js"
+    "js": "/assets/vendor.e6aae3dc.js"
   }
 };
