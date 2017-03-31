@@ -642,7 +642,7 @@ var _NowPlayingRating2 = _interopRequireDefault(_NowPlayingRating);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var baseURL = 'https://api.spotify.com/v1/tracks/';
+var baseURL = 'https://api.spotify.com/v1/albums/';
 
 var NowPlaying = function (_React$Component) {
   (0, _inherits3.default)(NowPlaying, _React$Component);
@@ -689,7 +689,7 @@ var NowPlaying = function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch('' + baseURL + this.state.current.trackId);
+                return fetch('' + baseURL + this.state.current.albumId);
 
               case 2:
                 response = _context.sent;
@@ -698,7 +698,7 @@ var NowPlaying = function (_React$Component) {
 
               case 5:
                 responseJson = _context.sent;
-                artwork = responseJson.album.images[0].url;
+                artwork = responseJson.images[0].url;
 
                 this.setState({ imageURL: artwork });
 
